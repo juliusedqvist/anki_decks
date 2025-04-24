@@ -1,0 +1,558 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "a1fbe71e-2149-11f0-949b-90e8680fb0a5",
+    "deck_config_uuid": "57e10086-2146-11f0-949b-90e8680fb0a5",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "answerAction": 0,
+            "autoplay": true,
+            "buryInterdayLearning": false,
+            "crowdanki_uuid": "57e10086-2146-11f0-949b-90e8680fb0a5",
+            "desiredRetention": 0.9,
+            "dyn": false,
+            "easyDaysPercentages": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "fsrsParams5": [],
+            "fsrsWeights": [],
+            "ignoreRevlogsBeforeDate": "",
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 1,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Default",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    0
+                ],
+                "order": 1,
+                "perDay": 5
+            },
+            "newGatherPriority": 0,
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "newSortOrder": 0,
+            "questionAction": 0,
+            "reminder": {
+                "enabled": true,
+                "time": [
+                    8,
+                    0
+                ]
+            },
+            "replayq": true,
+            "rescheduleFsrsCards": false,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "perDay": 20
+            },
+            "reviewOrder": 0,
+            "secondsToShowAnswer": 0.0,
+            "secondsToShowQuestion": 0.0,
+            "sm2Retention": 0.9,
+            "stopTimerOnAnswer": false,
+            "timer": 0,
+            "waitForAudio": true,
+            "weightSearch": ""
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 0,
+    "extendRev": 0,
+    "media_files": [
+        "_auto-render.js",
+        "_highlight.css",
+        "_highlight.js",
+        "_katex.css",
+        "_katex.min.js",
+        "_markdown-it-mark.js",
+        "_markdown-it.min.js",
+        "_mhchem.js",
+        "_style.css",
+        "_user_style.css"
+    ],
+    "name": "sigsys",
+    "newLimit": null,
+    "newLimitToday": null,
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "css": "/* To customize styles for this note type, please edit the '_user_style.css'\n * file in your collection media folder.\n * \n * To find it, please refer to: https://docs.ankiweb.net/files.html#file-locations */\n\n@import url(_style.css);\n@import url(_user_style.css);\n",
+            "flds": [
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "id": 562287664888119929,
+                    "name": "Front",
+                    "ord": 0,
+                    "plainText": false,
+                    "preventDeletion": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false,
+                    "tag": null
+                },
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "id": -6352188333252181906,
+                    "name": "Back",
+                    "ord": 1,
+                    "plainText": false,
+                    "preventDeletion": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false,
+                    "tag": null
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "KaTeX and Markdown Basic (Color)",
+            "originalStockKind": 1,
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tmpls": [
+                {
+                    "afmt": "<div id=\"front\" class=\"field\">\n  <pre>{{Front}}</pre>\n</div>\n\n<hr id=answer>\n\n<div id=\"back\" class=\"field\">\n  <pre>{{Back}}</pre>\n</div>\n\n<!-- Anki-KaTeX-Markdown -->\n\n<script>\n  var fields = [...document.querySelectorAll(\".field\")];\n  var getResources = [\n    getCSS(\"_katex.css\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css\"),\n    getCSS(\"_highlight.css\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css\"),\n    getScript(\"_highlight.js\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js\"),\n    getScript(\"_katex.min.js\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js\"),\n    getScript(\"_auto-render.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/auto-render-cdn.js\"),\n    getScript(\"_markdown-it.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js\"),\n    getScript(\"_markdown-it-mark.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/_markdown-it-mark.js\")\n  ];\n  Promise.all(getResources).then(() => getScript(\"_mhchem.js\", \"https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js\")).then(render).catch(show);\n\n\n  function getScript(path, altURL) {\n    return new Promise((resolve, reject) => {\n      let script = document.createElement(\"script\");\n      script.onload = resolve;\n      script.onerror = function () {\n        let script_online = document.createElement(\"script\");\n        script_online.onload = resolve;\n        script_online.onerror = reject;\n        script_online.src = altURL;\n        document.head.appendChild(script_online);\n      };\n      script.src = path;\n      document.head.appendChild(script);\n    });\n  }\n\n  function getCSS(path, altURL) {\n    return new Promise((resolve, reject) => {\n      var css = document.createElement(\"link\");\n      css.setAttribute(\"rel\", \"stylesheet\");\n      css.type = \"text/css\";\n      css.onload = resolve;\n      css.onerror = function () {\n        var css_online = document.createElement(\"link\");\n        css_online.setAttribute(\"rel\", \"stylesheet\");\n        css_online.type = \"text/css\";\n        css_online.onload = resolve;\n        css_online.onerror = reject;\n        css_online.href = altURL;\n        document.head.appendChild(css_online);\n      };\n      css.href = path;\n      document.head.appendChild(css);\n    });\n  }\n\n  function render() {\n    fields.forEach((element) => {\n      renderMath(element.id);\n      markdown(element.id);\n    });\n    show();\n  }\n\n  function show() {\n    fields.forEach((element) => {\n      document.getElementById(element.id).style.visibility = \"visible\";\n    });\n  }\n\n  function renderMath(ID) {\n    let text = document.getElementById(ID).innerHTML;\n    text = replaceInString(text);\n    text = text.replaceAll(\"\\\\$\", \"⛳\");\n    text = text.replaceAll(\"\\\\:\", \"🉐\");\n    document.getElementById(ID).innerHTML = text;\n    renderMathInElement(document.getElementById(ID), {\n      delimiters: [\n        { left: \"$$\", right: \"$$\", display: true },\n        { left: \"$\", right: \"$\", display: false },\n      ],\n      throwOnError: false,\n    });\n  }\n\n  function markdown(ID) {\n    let md = new markdownit({\n      typographer: true, html: true, highlight: function (str, lang) {\n        if (lang && hljs.getLanguage(lang)) {\n          try {\n            return hljs.highlight(str, { language: lang }).value;\n          } catch (__) { }\n        }\n\n        return \"\"; // use external default escaping\n      },\n    }).use(markdownItMark);\n    let text = replaceHTMLElementsInString(document.getElementById(ID).innerHTML);\n    text = md.render(text);\n    text = restoreHTMLElementsInString(text);\n    text = text.replaceAll(\"⛳\", \"$\");\n    text = text.replaceAll(\"🉐\", \":\");\n    document.getElementById(ID).innerHTML = text.replace(/&lt;\\/span&gt;/gi, \"\\\\\");\n  }\n  function replaceInString(str) {\n    str = str.replace(/<[\\/]?pre[^>]*>/gi, \"\");\n    str = str.replace(/<br\\s*[\\/]?[^>]*>/gi, \"\\n\");\n    str = str.replace(/<div[^>]*>/gi, \"\\n\");\n    // Thanks Graham A!\n    str = str.replace(/<[\\/]?span[^>]*>/gi, \"\");\n    str = str.replace(/<\\/div[^>]*>/g, \"\\n\");\n    return replaceHTMLElementsInString(str);\n  }\n\n  replacementElements = [\n    { from: \"\\\\<\", to: \"➿\", is_plaintext: true },\n    { from: \"\\\\>\", to: \"➰\", is_plaintext: true },\n    { from: \"&amp;\", to: \"&\" },\n    { from: \"&nbsp;\", to: \" \" },\n    { from: \"&tab;\", to: \"\t\" },\n  ];\n\n  restoreElements = [\n    { from: \"➿\", to: \"<\", is_plaintext: true },\n    { from: \"➰\", to: \">\", is_plaintext: true },\n    { from: \"&amp;\", to: \"&\", is_plaintext: true },\n    { from: \"&amp;lt;\", to: \"&lt;\", is_plaintext: true },\n    { from: \"&amp;gt;\", to: \"&gt;\", is_plaintext: true },\n  ];\n\n  function replaceHTMLElementsInString(str) {\n    for (let i = 0; i < replacementElements.length; i++) {\n      if (replacementElements[i].is_plaintext) {\n        str = str.replaceAll(replacementElements[i].from, replacementElements[i].to);\n      } else {\n        str = str.replace(new RegExp(replacementElements[i].from, \"gi\"), replacementElements[i].to);\n      }\n    }\n    return str;\n  }\n\n  function restoreHTMLElementsInString(str) {\n    for (let i = 0; i < restoreElements.length; i++) {\n      str = str.replace(new RegExp(restoreElements[i].from, \"gi\"), restoreElements[i].to);\n    }\n    return str;\n  }\n</script>\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "id": 4656602492711896623,
+                    "name": "KaTeX and Markdown Basic (Color)",
+                    "ord": 0,
+                    "qfmt": "<div id=\"front\" class=\"field\">\n  <pre>{{Front}}</pre>\n</div>\n\n<!-- Anki-KaTeX-Markdown -->\n\n<script>\n  var fields = [...document.querySelectorAll(\".field\")];\n  var getResources = [\n    getCSS(\"_katex.css\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css\"),\n    getCSS(\"_highlight.css\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css\"),\n    getScript(\"_highlight.js\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js\"),\n    getScript(\"_katex.min.js\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js\"),\n    getScript(\"_auto-render.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/auto-render-cdn.js\"),\n    getScript(\"_markdown-it.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js\"),\n    getScript(\"_markdown-it-mark.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/_markdown-it-mark.js\")\n  ];\n  Promise.all(getResources).then(() => getScript(\"_mhchem.js\", \"https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js\")).then(render).catch(show);\n\n\n  function getScript(path, altURL) {\n    return new Promise((resolve, reject) => {\n      let script = document.createElement(\"script\");\n      script.onload = resolve;\n      script.onerror = function () {\n        let script_online = document.createElement(\"script\");\n        script_online.onload = resolve;\n        script_online.onerror = reject;\n        script_online.src = altURL;\n        document.head.appendChild(script_online);\n      };\n      script.src = path;\n      document.head.appendChild(script);\n    });\n  }\n\n  function getCSS(path, altURL) {\n    return new Promise((resolve, reject) => {\n      var css = document.createElement(\"link\");\n      css.setAttribute(\"rel\", \"stylesheet\");\n      css.type = \"text/css\";\n      css.onload = resolve;\n      css.onerror = function () {\n        var css_online = document.createElement(\"link\");\n        css_online.setAttribute(\"rel\", \"stylesheet\");\n        css_online.type = \"text/css\";\n        css_online.onload = resolve;\n        css_online.onerror = reject;\n        css_online.href = altURL;\n        document.head.appendChild(css_online);\n      };\n      css.href = path;\n      document.head.appendChild(css);\n    });\n  }\n\n  function render() {\n    fields.forEach((element) => {\n      renderMath(element.id);\n      markdown(element.id);\n    });\n    show();\n  }\n\n  function show() {\n    fields.forEach((element) => {\n      document.getElementById(element.id).style.visibility = \"visible\";\n    });\n  }\n\n  function renderMath(ID) {\n    let text = document.getElementById(ID).innerHTML;\n    text = replaceInString(text);\n    text = text.replaceAll(\"\\\\$\", \"⛳\");\n    text = text.replaceAll(\"\\\\:\", \"🉐\");\n    document.getElementById(ID).innerHTML = text;\n    renderMathInElement(document.getElementById(ID), {\n      delimiters: [\n        { left: \"$$\", right: \"$$\", display: true },\n        { left: \"$\", right: \"$\", display: false },\n      ],\n      throwOnError: false,\n    });\n  }\n\n  function markdown(ID) {\n    let md = new markdownit({\n      typographer: true, html: true, highlight: function (str, lang) {\n        if (lang && hljs.getLanguage(lang)) {\n          try {\n            return hljs.highlight(str, { language: lang }).value;\n          } catch (__) { }\n        }\n\n        return \"\"; // use external default escaping\n      },\n    }).use(markdownItMark);\n    let text = replaceHTMLElementsInString(document.getElementById(ID).innerHTML);\n    text = md.render(text);\n    text = restoreHTMLElementsInString(text);\n    text = text.replaceAll(\"⛳\", \"$\");\n    text = text.replaceAll(\"🉐\", \":\");\n    document.getElementById(ID).innerHTML = text.replace(/&lt;\\/span&gt;/gi, \"\\\\\");\n  }\n  function replaceInString(str) {\n    str = str.replace(/<[\\/]?pre[^>]*>/gi, \"\");\n    str = str.replace(/<br\\s*[\\/]?[^>]*>/gi, \"\\n\");\n    str = str.replace(/<div[^>]*>/gi, \"\\n\");\n    // Thanks Graham A!\n    str = str.replace(/<[\\/]?span[^>]*>/gi, \"\");\n    str = str.replace(/<\\/div[^>]*>/g, \"\\n\");\n    return replaceHTMLElementsInString(str);\n  }\n\n  replacementElements = [\n    { from: \"\\\\<\", to: \"➿\", is_plaintext: true },\n    { from: \"\\\\>\", to: \"➰\", is_plaintext: true },\n    { from: \"&amp;\", to: \"&\" },\n    { from: \"&nbsp;\", to: \" \" },\n    { from: \"&tab;\", to: \"\t\" },\n  ];\n\n  restoreElements = [\n    { from: \"➿\", to: \"<\", is_plaintext: true },\n    { from: \"➰\", to: \">\", is_plaintext: true },\n    { from: \"&amp;\", to: \"&\", is_plaintext: true },\n    { from: \"&amp;lt;\", to: \"&lt;\", is_plaintext: true },\n    { from: \"&amp;gt;\", to: \"&gt;\", is_plaintext: true },\n  ];\n\n  function replaceHTMLElementsInString(str) {\n    for (let i = 0; i < replacementElements.length; i++) {\n      if (replacementElements[i].is_plaintext) {\n        str = str.replaceAll(replacementElements[i].from, replacementElements[i].to);\n      } else {\n        str = str.replace(new RegExp(replacementElements[i].from, \"gi\"), replacementElements[i].to);\n      }\n    }\n    return str;\n  }\n\n  function restoreHTMLElementsInString(str) {\n    for (let i = 0; i < restoreElements.length; i++) {\n      str = str.replace(new RegExp(restoreElements[i].from, \"gi\"), restoreElements[i].to);\n    }\n    return str;\n  }\n</script>\n"
+                }
+            ],
+            "type": 0
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "fields": [
+                "**CT vs DT Signals**  <br />What is the difference between continuous-time and discrete-time signals?",
+                "**Continuous-Time (CT) Signal:**  <br />- Defined for **all values** of the independent variable $t$  <br />- Examples: $x(t)$, including frequency-dependent signals like $x(f)$  <br />- Continuous in time domain  <br /><br />**Discrete-Time (DT) Signal:**  <br />- Defined **only at discrete time points**, e.g., $k = 0, 1, 2, \\dots$  <br />- Example: Customer count every hour (not known between)  <br />- Represented as $x[k]$<br /><br />**Sampling:**  <br />- Converts a CT signal $x(t)$ into a DT signal $x[k] = x(kT)$  <br />- $T$ is the **sampling interval**"
+            ],
+            "guid": "P.,)*YLj#h",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Signals_Intro"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Analog vs Digital Signals**  <br />How do analog and digital signals differ?",
+                "**Analog Signal:**  <br />- Continuous-Time (CT)  <br />- **Amplitude takes continuous values**  <br />- Example: Voltage signal changing from $0$ to $1V$  <br /><br />**Digital Signal:**  <br />- Discrete-Time (DT)  <br />- **Amplitude takes values from a finite set**  <br />- Example: Customer count (nonnegative integers, possibly limited to 0–8)  <br />- Another example: image pixels with discrete positions and values (e.g., black/white)<br /><br />**Conversion from Analog to Digital:**  <br />1. **Sampling** – Convert CT signal to DT  <br />2. **Quantization** – Approximate amplitude to finite values  <br /><br />- **Quantization noise** = loss of accuracy from quantization  <br />- **More quantization levels** $\\Rightarrow$ **higher quality**"
+            ],
+            "guid": "masTG7>J1/",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Signals_Intro"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Periodic vs Aperiodic Signals**  <br />What makes a signal periodic or aperiodic in CT and DT?",
+                "**Periodic Signal:**  <br />- **CT Signal** $x(t)$ is periodic if:  <br />  $$x(t) = x(t + T_0)$$  <br />  for **all** $t$ and some **$T_0 > 0$**  <br />- **DT Signal** $x[k]$ is periodic if:  <br />  $$x[k] = x[k + K_0]$$  <br />  for **all** $k$ and some **$K_0 > 0$**<br /><br />- **$T_0$ or $K_0$** is the **fundamental period**  <br />- **Fundamental frequency:**  <br />  $$f_0 = \\frac{1}{T_0} \\text{ (CT)} \\quad \\text{or} \\quad f_0 = \\frac{1}{K_0} \\text{ (DT)}$$<br /><br />**Aperiodic Signal (Non-periodic):**  <br />- A signal that does **not** satisfy the periodic condition  <br />- Example: Signals in Figure 1.1 are **aperiodic**  <br />- Sinusoidal signals that extend to $\\pm \\infty$ (like in Figure 1.3) are **periodic**"
+            ],
+            "guid": "x>bIbMxa^-",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Signals_Intro"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Energy Signals**  <br />How is energy defined for CT and DT signals?  <br />When is a signal called an energy signal?",
+                "**Energy of a CT signal**:  <br />$$E = \\int_{-\\infty}^{\\infty} |x(t)|^2 \\, dt$$<br /><br />**Energy of a DT signal**:  <br />$$E = \\sum_{k=-\\infty}^{\\infty} |x[k]|^2$$<br /><br />A signal is called an **energy signal** if:  <br />$$0 < E < \\infty$$  <br />(i.e., it has **finite, non-zero** total energy)<br /><br />Example:  <br />Short pulses or decaying signals over time  <br />(not active forever)"
+            ],
+            "guid": "QW>u~eYK)R",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Signals_Energy_Power"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Power Signals**  <br />How is average power defined for CT and DT signals?  <br />When is a signal called a power signal?",
+                "**Average Power of a CT signal**:  <br />$$P = \\lim_{T \\to \\infty} \\frac{1}{T} \\int_{-T/2}^{T/2} |x(t)|^2 \\, dt$$<br /><br />**Average Power of a DT signal**:  <br />$$P = \\lim_{K \\to \\infty} \\frac{1}{K + 1} \\sum_{k=-K/2}^{K/2} |x[k]|^2$$<br /><br />A signal is a **power signal** if:  <br />$$0 < P < \\infty$$  <br />(i.e., it has **finite, non-zero** average power)<br /><br />Example:  <br />Periodic signals like sinusoids, square waves  <br />(constant energy per time)"
+            ],
+            "guid": "yh/vU$-Yl!",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Signals_Energy_Power"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Energy Signal vs Power Signal**  <br />How do energy and power signals differ?",
+                "🔹 **Energy Signal**  <br />- Total energy is finite and non-zero: $0 < E < \\infty$  <br />- Power is **zero**  <br />- Example: Pulse that dies out over time<br /><br />🔹 **Power Signal**  <br />- Total energy is **infinite**  <br />- Average power is finite and non-zero: $0 < P < \\infty$  <br />- Example: Periodic signals (e.g. sine wave)<br /><br />🔸 A signal **cannot** be both an energy and a power signal  <br />🔸 Some signals are **neither**"
+            ],
+            "guid": "m?~<}$][KE",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Signals_Energy_Power"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Deterministic vs. Random Signals**  <br />What is the difference between deterministic and random signals?",
+                "🔹 **Deterministic Signal**  <br />- Can be exactly predicted for all time  <br />- Often described by a **mathematical formula** or **graph**  <br />- Example: Pure sine wave<br /><br />🔹 **Random Signal**  <br />- **Cannot** be predicted precisely  <br />- Has **uncertainty** or randomness (noise)  <br />- Common in real-world signals (e.g. audio with background noise)<br /><br />🔸 In practice, random signals are often modeled as:  <br />**Deterministic part + Noise**  <br />If noise is small, the signal can be approximated as deterministic."
+            ],
+            "guid": "D048*,]|k+",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Signals_Deterministic_Random"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Odd vs. Even Signals**  <br />What are odd and even signals, and how are they related?",
+                "🔹 **Even Signal**  <br />- Satisfies: **x(t) = x(−t)** or **x[k] = x[−k]**  <br />- Symmetric about the y-axis  <br />- Example: **cos(t)**<br /><br />🔹 **Odd Signal**  <br />- Satisfies: **x(t) = −x(−t)** or **x[k] = −x[−k]**  <br />- Symmetric with a 180° rotation around the origin  <br />- Example: **sin(t)**<br /><br />🔸 **Any signal** can be decomposed into:  <br />**x(t) = xe(t) + xo(t)**<br /><br />Where:  <br />- xe(t) = (x(t) + x(−t)) / 2 → Even part  <br />- xo(t) = (x(t) − x(−t)) / 2 → Odd part<br /><br />Same applies for DT signals x[k]."
+            ],
+            "guid": "kEmrAykU.Z",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Signals_Odd_Even"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the unit step function $u(t)$?",
+                "A signal that switches on at $t = 0$:<br /><br />$$<br />u(t) =<br />\\begin{cases}<br />0, & t < 0 \\\\<br />1, & t \\geq 0<br />\\end{cases}<br />$$<br /><br />Commonly used to model signals starting at a specific time."
+            ],
+            "guid": "E:NGaP6j>U",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Signals_Basics"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the rectangular pulse function?",
+                "A signal that is $1$ for a limited time and $0$ elsewhere:<br /><br />$$<br />\\text{rect}(t) =<br />\\begin{cases}<br />1, & |t| \\leq \\frac{T}{2} \\\\<br />0, & \\text{otherwise}<br />\\end{cases}<br />$$<br /><br />Used to model digital and sampled signals."
+            ],
+            "guid": "vqB$$Lw[i`",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Signals_Basics"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the signum function $\\text{sgn}(t)$?",
+                "Gives the sign of a real number:<br /><br />$$<br />\\text{sgn}(t) =<br />\\begin{cases}<br />-1, & t < 0 \\\\<br />0, & t = 0 \\\\<br />1, & t > 0<br />\\end{cases}<br />$$<br /><br />Useful in control and system modeling."
+            ],
+            "guid": "zU.kXe.6vH",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Signals_Basics"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the ramp function $r(t)$?",
+                "A linearly increasing signal starting from $0$:<br /><br />$$<br />r(t) =<br />\\begin{cases}<br />0, & t < 0 \\\\<br />t, & t \\geq 0<br />\\end{cases}<br />$$<br /><br />Can be written as $r(t) = t \\cdot u(t)$"
+            ],
+            "guid": "u&|3$b4aXT",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Signals_Basics"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a sinusoidal function?",
+                "A periodic signal based on sine or cosine:<br /><br />$$<br />x(t) = A \\cdot \\sin(\\omega t + \\phi) \\quad \\text{or} \\quad x(t) = A \\cdot \\cos(\\omega t + \\phi)<br />$$<br /><br />- $A$: amplitude  <br />- $\\omega$: angular frequency  <br />- $\\phi$: phase"
+            ],
+            "guid": "BIfb}7IAGK",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Signals_Basics"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the sinc function?",
+                "A normalized oscillatory function:<br /><br />$$<br />\\sinc(t) = \\frac{\\sin(\\pi t)}{\\pi t}<br />$$<br /><br />Key in signal reconstruction and Fourier analysis."
+            ],
+            "guid": "E$reQ8d3zc",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Signals_Basics"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is an exponential signal?",
+                "Describes exponential growth or decay:<br /><br />**Continuous-time (CT):**  <br />$$x(t) = A \\cdot e^{\\alpha t}$$<br /><br />**Discrete-time (DT):**  <br />$$x[k] = A \\cdot r^k$$<br /><br />Used in modeling natural and decaying systems."
+            ],
+            "guid": "KJdMvHNr_*",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Signals_Basics"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the key properties of the unit impulse function (CT and DT)?",
+                "- $\\delta(t) = 0$ for all $t \\neq 0$<br />- $\\int_{-\\infty}^{\\infty} \\delta(t)\\,dt = 1$<br />- Even function: $\\delta(t) = \\delta(-t)$<br />- $\\delta(at + b) = \\frac{1}{|a|} \\delta\\left(t + \\frac{b}{a}\\right)$<br />- $\\phi(t)\\delta(t - t_0) = \\phi(t_0)\\delta(t - t_0)$<br />- $\\int_{-\\infty}^{\\infty} \\phi(t)\\delta(t - t_0)\\,dt = \\phi(t_0)$<br />- Derivative of unit step: $\\delta(t) = \\frac{du(t)}{dt}$<br />- Integral of impulse: $u(t) = \\int_{-\\infty}^{t} \\delta(\\tau)\\,d\\tau$<br /><br />Used in system analysis, especially in convolution and modeling instantaneous events.<br /><br />---<br /><br />- $\\delta[k] = \\begin{cases} 1, & k = 0 \\\\ 0, & k \\neq 0 \\end{cases}$<br />- $\\delta[k] = u[k] - u[k - 1]$<br />- Can represent any discrete signal as a weighted sum of shifted impulses:<br /><br />$$<br />x[k] = \\sum_{l=-\\infty}^{\\infty} x[l] \\delta[k - l]<br />$$<br /><br />A core building block in digital signal processing."
+            ],
+            "guid": "J<J[ZUHX8R",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Signals_Basics"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is time shifting of a signal?",
+                "Shifting a signal in time means delaying or advancing it.<br /><br />- For CT: $y(t) = x(t - t_0)$<br />- For DT: $y[k] = x[k - k_0]$<br /><br />- If $t_0 > 0$, the signal is delayed (moves right)<br />- If $t_0 < 0$, the signal is advanced (moves left)<br /><br />**Example:**  <br />$x(t) = \\cos(t) \\Rightarrow x(t - \\pi) = \\cos(t - \\pi)$  <br />This shifts the cosine wave to the right by $\\pi$ units."
+            ],
+            "guid": "Kuw>~kmrxM",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Signals_Basics"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is time scaling of a signal?",
+                "Time scaling compresses or stretches a signal along the time axis.<br /><br />- For CT: $y(t) = x(at)$<br />- For DT: $y[k] = x(ak)$ (usually $a$ must be an integer)<br /><br />- If $|a| > 1$, the signal is **compressed** (faster)<br />- If $0 < |a| < 1$, the signal is **stretched** (slower)<br /><br />**Example:**  <br />$x(t) = \\sin(t) \\Rightarrow x(2t) = \\sin(2t)$ compresses the signal in time by a factor of 2."
+            ],
+            "guid": "ue;R&$JYx;",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Signals_Basics"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is time inversion of a signal?",
+                "Time inversion flips the signal around the vertical axis (mirrors it).<br /><br />- For CT: $y(t) = x(-t)$<br />- For DT: $y[k] = x[-k]$<br /><br />This reverses the direction of the signal in time.<br /><br />**Example:**  <br />If $x(t)$ is a ramp increasing over time, $x(-t)$ becomes a ramp decreasing over time."
+            ],
+            "guid": "yFM1!irP%E",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Signals_Basics"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Example: CT System**  <br />What is the differential equation for a differentiator op-amp?",
+                "For a differentiator op-amp:<br />$$<br />y(t) = v_\\text{out}(t) = -RC \\frac{d}{dt}x(t)<br />$$  <br />This describes a linear CT SISO system."
+            ],
+            "guid": "OlKLo_{[2/",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "ct-example"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Example: DT System**  <br />What is the difference equation for a student's account balance over time?",
+                "Assuming monthly scholarship $x_1[k]$, expenses $x_2[k]$, and initial balance $y[0]$, with monthly interest $I/12$:<br />$$<br />y[k] = \\left(1 + \\frac{I}{12}\\right)y[k-1] + x_1[k] - x_2[k]<br />$$  <br />This is a DT system described by a first-order linear difference equation."
+            ],
+            "guid": "B6V%$-I&Ne",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "dt-example"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Systems**  <br />What is the general structure of a system and how are SISO and MIMO systems defined?",
+                "A system has one or more input signals $x_i$ and one or more output signals $y_i$ that depend on the input.  <br />- A **SISO** (Single Input, Single Output) system has one input and one output.  <br />- A **MIMO** (Multiple Input, Multiple Output) system has multiple inputs and outputs.  <br />- If the signals are continuous-time (CT), it's a **CT system**.  <br />- If the signals are discrete-time (DT), it's a **DT system**."
+            ],
+            "guid": "pMWkaU=ik7",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "systems"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**System Modeling**  <br />How are CT and DT systems typically mathematically described?",
+                "- **CT systems** (Continuous-Time) are often modeled with linear differential equations:<br />  $$<br />  a_n \\frac{d^n y(t)}{dt^n} + \\cdots + a_0 y(t) = b_m \\frac{d^m x(t)}{dt^m} + \\cdots + b_0 x(t)<br />  $$  <br />- **DT systems** (Discrete-Time) are often modeled with linear difference equations:<br />  $$<br />  y[k] + a_{n-1} y[k-1] + \\cdots + a_0 y[k-n] = b_m x[k] + b_{m-1} x[k-1] + \\cdots + b_0 x[k-m]<br />  $$"
+            ],
+            "guid": "hK~W-U-&`5",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "system-modeling"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Linearity**  <br />What defines a linear system (CT or DT), and what happens when this condition is not met?",
+                "A system is **linear** if it satisfies the principle of superposition:  <br />For any inputs $x_1$ and $x_2$ with corresponding outputs $y_1$ and $y_2$, and scalars $\\alpha, \\beta$, the following holds:<br />- CT: $\\alpha x_1(t) + \\beta x_2(t) \\rightarrow \\alpha y_1(t) + \\beta y_2(t)$  <br />- DT: $\\alpha x_1[k] + \\beta x_2[k] \\rightarrow \\alpha y_1[k] + \\beta y_2[k]$<br /><br />If this condition is violated, the system is **nonlinear**."
+            ],
+            "guid": "BF(BR+lmVM",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "linearity",
+                "systems"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Time-Invariance**  <br />What is a time-invariant system, and how can you test for it?",
+                "A system is **time-invariant** if a time-shifted input causes an identical time-shifted output:<br />- CT: If $x(t) \\rightarrow y(t)$, then $x(t - T) \\rightarrow y(t - T)$<br />- DT: If $x[k] \\rightarrow y[k]$, then $x[k - K] \\rightarrow y[k - K]$<br /><br />If the output depends on absolute time or does not shift accordingly, the system is **time-varying**."
+            ],
+            "guid": "w#imqK|KO(",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "systems",
+                "time"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Causality**  <br />What makes a system causal, and how can a system be non-causal?",
+                "A system is **causal** if the output at any time depends only on current and past inputs:<br />- CT: $y(t)$ depends only on $x(\\tau)$ for $\\tau \\leq t$<br />- DT: $y[k]$ depends only on $x[n]$ for $n \\leq k$<br /><br />If a system depends on **future** input values, it's **non-causal** or **anticipative**.  <br />Memoryless systems are always causal."
+            ],
+            "guid": "cqu5[O`Xqe",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "causality",
+                "systems"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Memory**  <br />What is the difference between a system with memory and a memoryless system?",
+                "- A **memoryless** system's output depends only on the current input value:<br />  - CT: $y(t)$ depends only on $x(t)$<br />  - DT: $y[k]$ depends only on $x[k]$<br />- A system has **memory** if the output depends on past or future values of the input.<br /><br />Example: Resistor-only circuits are memoryless because resistors don’t store energy."
+            ],
+            "guid": "v/@4J3+>ad",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "memory",
+                "systems"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Invertibility**  <br />What does it mean for a system to be invertible?",
+                "A system is **invertible** if every output corresponds to exactly one input, i.e., the input $x(t)$ (or $x[k]$) can be uniquely recovered from the output $y(t)$ (or $y[k]$).  <br />An **inverse system** exists such that:<br />$$<br />\\text{Original system: } x(t) \\rightarrow y(t), \\quad \\text{Inverse: } y(t) \\rightarrow x(t)<br />$$<br />If different inputs can produce the same output, the system is **non-invertible**."
+            ],
+            "guid": "cRF(@T{Uw@",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "invertibility",
+                "systems"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Stability**  <br />What does it mean for a system to be BIBO (Bounded-Input Bounded-Output) stable?",
+                "A system is **BIBO stable** if every bounded input produces a bounded output.<br /><br />- CT: If $x(t)$ is bounded $\\Rightarrow$ $\\exists M < \\infty$ such that $\\max_{t \\in (-\\infty, \\infty)} |x(t)| \\leq M$<br />- DT: If $x[k]$ is bounded $\\Rightarrow$ $\\max_{k \\in (-\\infty, \\infty)} |x[k]| \\leq M$<br /><br />Then the output $y(t)$ or $y[k]$ must also satisfy a similar bound.<br /><br />**Example:**  <br />Given $y[k] = 3x[k] - 30$, if $|x[k]| \\leq M$, then  <br />$$<br />|y[k]| \\leq |3x[k]| + 30 \\leq 3M + 30<br />$$  <br />Thus, the system is **BIBO stable**."
+            ],
+            "guid": "N0D0JB*GyK",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "stability",
+                "systems"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Serial Connection**  <br />What happens when two systems are connected in series (cascaded)?",
+                "In a **serial (cascaded) connection**, the output of the first subsystem becomes the input to the second subsystem.<br /><br />- If both subsystems are **linear and time-invariant (LTI)**, the overall system is also LTI.<br />- This type of interconnection simplifies analysis by modularizing complex systems."
+            ],
+            "guid": "Aw!6zK]~n6",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "interconnection",
+                "systems"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Parallel Connection**  <br />What is a parallel connection of systems and what is the result of such a configuration?",
+                "In a **parallel connection**, the same input is applied to multiple subsystems, and their **outputs are summed** to form the overall output.<br /><br />- If both subsystems are **LTI**, the combined system is also LTI.<br />- Parallel structures are useful for decomposing complex behavior into additive components."
+            ],
+            "guid": "d_hg3U$tIN",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "interconnection",
+                "systems"
+            ]
+        }
+    ],
+    "reviewLimit": null,
+    "reviewLimitToday": null
+}
