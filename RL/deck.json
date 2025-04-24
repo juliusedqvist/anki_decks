@@ -1,0 +1,706 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "57e0f88e-2146-11f0-949b-90e8680fb0a5",
+    "deck_config_uuid": "57e10086-2146-11f0-949b-90e8680fb0a5",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "answerAction": 0,
+            "autoplay": true,
+            "buryInterdayLearning": false,
+            "crowdanki_uuid": "57e10086-2146-11f0-949b-90e8680fb0a5",
+            "desiredRetention": 0.9,
+            "dyn": false,
+            "easyDaysPercentages": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "fsrsParams5": [],
+            "fsrsWeights": [],
+            "ignoreRevlogsBeforeDate": "",
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 1,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Default",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    0
+                ],
+                "order": 1,
+                "perDay": 5
+            },
+            "newGatherPriority": 0,
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "newSortOrder": 0,
+            "questionAction": 0,
+            "reminder": {
+                "enabled": true,
+                "time": [
+                    8,
+                    0
+                ]
+            },
+            "replayq": true,
+            "rescheduleFsrsCards": false,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "perDay": 20
+            },
+            "reviewOrder": 0,
+            "secondsToShowAnswer": 0.0,
+            "secondsToShowQuestion": 0.0,
+            "sm2Retention": 0.9,
+            "stopTimerOnAnswer": false,
+            "timer": 0,
+            "waitForAudio": true,
+            "weightSearch": ""
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 0,
+    "extendRev": 0,
+    "media_files": [
+        "_auto-render.js",
+        "_highlight.css",
+        "_highlight.js",
+        "_katex.css",
+        "_katex.min.js",
+        "_markdown-it-mark.js",
+        "_markdown-it.min.js",
+        "_mhchem.js",
+        "_style.css",
+        "_user_style.css"
+    ],
+    "name": "RL",
+    "newLimit": null,
+    "newLimitToday": null,
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "css": "/* To customize styles for this note type, please edit the '_user_style.css'\n * file in your collection media folder.\n * \n * To find it, please refer to: https://docs.ankiweb.net/files.html#file-locations */\n\n@import url(_style.css);\n@import url(_user_style.css);\n",
+            "flds": [
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "id": 562287664888119929,
+                    "name": "Front",
+                    "ord": 0,
+                    "plainText": false,
+                    "preventDeletion": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false,
+                    "tag": null
+                },
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "id": -6352188333252181906,
+                    "name": "Back",
+                    "ord": 1,
+                    "plainText": false,
+                    "preventDeletion": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false,
+                    "tag": null
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "KaTeX and Markdown Basic (Color)",
+            "originalStockKind": 1,
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tmpls": [
+                {
+                    "afmt": "<div id=\"front\" class=\"field\">\n  <pre>{{Front}}</pre>\n</div>\n\n<hr id=answer>\n\n<div id=\"back\" class=\"field\">\n  <pre>{{Back}}</pre>\n</div>\n\n<!-- Anki-KaTeX-Markdown -->\n\n<script>\n  var fields = [...document.querySelectorAll(\".field\")];\n  var getResources = [\n    getCSS(\"_katex.css\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css\"),\n    getCSS(\"_highlight.css\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css\"),\n    getScript(\"_highlight.js\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js\"),\n    getScript(\"_katex.min.js\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js\"),\n    getScript(\"_auto-render.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/auto-render-cdn.js\"),\n    getScript(\"_markdown-it.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js\"),\n    getScript(\"_markdown-it-mark.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/_markdown-it-mark.js\")\n  ];\n  Promise.all(getResources).then(() => getScript(\"_mhchem.js\", \"https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js\")).then(render).catch(show);\n\n\n  function getScript(path, altURL) {\n    return new Promise((resolve, reject) => {\n      let script = document.createElement(\"script\");\n      script.onload = resolve;\n      script.onerror = function () {\n        let script_online = document.createElement(\"script\");\n        script_online.onload = resolve;\n        script_online.onerror = reject;\n        script_online.src = altURL;\n        document.head.appendChild(script_online);\n      };\n      script.src = path;\n      document.head.appendChild(script);\n    });\n  }\n\n  function getCSS(path, altURL) {\n    return new Promise((resolve, reject) => {\n      var css = document.createElement(\"link\");\n      css.setAttribute(\"rel\", \"stylesheet\");\n      css.type = \"text/css\";\n      css.onload = resolve;\n      css.onerror = function () {\n        var css_online = document.createElement(\"link\");\n        css_online.setAttribute(\"rel\", \"stylesheet\");\n        css_online.type = \"text/css\";\n        css_online.onload = resolve;\n        css_online.onerror = reject;\n        css_online.href = altURL;\n        document.head.appendChild(css_online);\n      };\n      css.href = path;\n      document.head.appendChild(css);\n    });\n  }\n\n  function render() {\n    fields.forEach((element) => {\n      renderMath(element.id);\n      markdown(element.id);\n    });\n    show();\n  }\n\n  function show() {\n    fields.forEach((element) => {\n      document.getElementById(element.id).style.visibility = \"visible\";\n    });\n  }\n\n  function renderMath(ID) {\n    let text = document.getElementById(ID).innerHTML;\n    text = replaceInString(text);\n    text = text.replaceAll(\"\\\\$\", \"⛳\");\n    text = text.replaceAll(\"\\\\:\", \"🉐\");\n    document.getElementById(ID).innerHTML = text;\n    renderMathInElement(document.getElementById(ID), {\n      delimiters: [\n        { left: \"$$\", right: \"$$\", display: true },\n        { left: \"$\", right: \"$\", display: false },\n      ],\n      throwOnError: false,\n    });\n  }\n\n  function markdown(ID) {\n    let md = new markdownit({\n      typographer: true, html: true, highlight: function (str, lang) {\n        if (lang && hljs.getLanguage(lang)) {\n          try {\n            return hljs.highlight(str, { language: lang }).value;\n          } catch (__) { }\n        }\n\n        return \"\"; // use external default escaping\n      },\n    }).use(markdownItMark);\n    let text = replaceHTMLElementsInString(document.getElementById(ID).innerHTML);\n    text = md.render(text);\n    text = restoreHTMLElementsInString(text);\n    text = text.replaceAll(\"⛳\", \"$\");\n    text = text.replaceAll(\"🉐\", \":\");\n    document.getElementById(ID).innerHTML = text.replace(/&lt;\\/span&gt;/gi, \"\\\\\");\n  }\n  function replaceInString(str) {\n    str = str.replace(/<[\\/]?pre[^>]*>/gi, \"\");\n    str = str.replace(/<br\\s*[\\/]?[^>]*>/gi, \"\\n\");\n    str = str.replace(/<div[^>]*>/gi, \"\\n\");\n    // Thanks Graham A!\n    str = str.replace(/<[\\/]?span[^>]*>/gi, \"\");\n    str = str.replace(/<\\/div[^>]*>/g, \"\\n\");\n    return replaceHTMLElementsInString(str);\n  }\n\n  replacementElements = [\n    { from: \"\\\\<\", to: \"➿\", is_plaintext: true },\n    { from: \"\\\\>\", to: \"➰\", is_plaintext: true },\n    { from: \"&amp;\", to: \"&\" },\n    { from: \"&nbsp;\", to: \" \" },\n    { from: \"&tab;\", to: \"\t\" },\n  ];\n\n  restoreElements = [\n    { from: \"➿\", to: \"<\", is_plaintext: true },\n    { from: \"➰\", to: \">\", is_plaintext: true },\n    { from: \"&amp;\", to: \"&\", is_plaintext: true },\n    { from: \"&amp;lt;\", to: \"&lt;\", is_plaintext: true },\n    { from: \"&amp;gt;\", to: \"&gt;\", is_plaintext: true },\n  ];\n\n  function replaceHTMLElementsInString(str) {\n    for (let i = 0; i < replacementElements.length; i++) {\n      if (replacementElements[i].is_plaintext) {\n        str = str.replaceAll(replacementElements[i].from, replacementElements[i].to);\n      } else {\n        str = str.replace(new RegExp(replacementElements[i].from, \"gi\"), replacementElements[i].to);\n      }\n    }\n    return str;\n  }\n\n  function restoreHTMLElementsInString(str) {\n    for (let i = 0; i < restoreElements.length; i++) {\n      str = str.replace(new RegExp(restoreElements[i].from, \"gi\"), restoreElements[i].to);\n    }\n    return str;\n  }\n</script>\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "id": 4656602492711896623,
+                    "name": "KaTeX and Markdown Basic (Color)",
+                    "ord": 0,
+                    "qfmt": "<div id=\"front\" class=\"field\">\n  <pre>{{Front}}</pre>\n</div>\n\n<!-- Anki-KaTeX-Markdown -->\n\n<script>\n  var fields = [...document.querySelectorAll(\".field\")];\n  var getResources = [\n    getCSS(\"_katex.css\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css\"),\n    getCSS(\"_highlight.css\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css\"),\n    getScript(\"_highlight.js\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js\"),\n    getScript(\"_katex.min.js\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js\"),\n    getScript(\"_auto-render.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/auto-render-cdn.js\"),\n    getScript(\"_markdown-it.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js\"),\n    getScript(\"_markdown-it-mark.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/_markdown-it-mark.js\")\n  ];\n  Promise.all(getResources).then(() => getScript(\"_mhchem.js\", \"https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js\")).then(render).catch(show);\n\n\n  function getScript(path, altURL) {\n    return new Promise((resolve, reject) => {\n      let script = document.createElement(\"script\");\n      script.onload = resolve;\n      script.onerror = function () {\n        let script_online = document.createElement(\"script\");\n        script_online.onload = resolve;\n        script_online.onerror = reject;\n        script_online.src = altURL;\n        document.head.appendChild(script_online);\n      };\n      script.src = path;\n      document.head.appendChild(script);\n    });\n  }\n\n  function getCSS(path, altURL) {\n    return new Promise((resolve, reject) => {\n      var css = document.createElement(\"link\");\n      css.setAttribute(\"rel\", \"stylesheet\");\n      css.type = \"text/css\";\n      css.onload = resolve;\n      css.onerror = function () {\n        var css_online = document.createElement(\"link\");\n        css_online.setAttribute(\"rel\", \"stylesheet\");\n        css_online.type = \"text/css\";\n        css_online.onload = resolve;\n        css_online.onerror = reject;\n        css_online.href = altURL;\n        document.head.appendChild(css_online);\n      };\n      css.href = path;\n      document.head.appendChild(css);\n    });\n  }\n\n  function render() {\n    fields.forEach((element) => {\n      renderMath(element.id);\n      markdown(element.id);\n    });\n    show();\n  }\n\n  function show() {\n    fields.forEach((element) => {\n      document.getElementById(element.id).style.visibility = \"visible\";\n    });\n  }\n\n  function renderMath(ID) {\n    let text = document.getElementById(ID).innerHTML;\n    text = replaceInString(text);\n    text = text.replaceAll(\"\\\\$\", \"⛳\");\n    text = text.replaceAll(\"\\\\:\", \"🉐\");\n    document.getElementById(ID).innerHTML = text;\n    renderMathInElement(document.getElementById(ID), {\n      delimiters: [\n        { left: \"$$\", right: \"$$\", display: true },\n        { left: \"$\", right: \"$\", display: false },\n      ],\n      throwOnError: false,\n    });\n  }\n\n  function markdown(ID) {\n    let md = new markdownit({\n      typographer: true, html: true, highlight: function (str, lang) {\n        if (lang && hljs.getLanguage(lang)) {\n          try {\n            return hljs.highlight(str, { language: lang }).value;\n          } catch (__) { }\n        }\n\n        return \"\"; // use external default escaping\n      },\n    }).use(markdownItMark);\n    let text = replaceHTMLElementsInString(document.getElementById(ID).innerHTML);\n    text = md.render(text);\n    text = restoreHTMLElementsInString(text);\n    text = text.replaceAll(\"⛳\", \"$\");\n    text = text.replaceAll(\"🉐\", \":\");\n    document.getElementById(ID).innerHTML = text.replace(/&lt;\\/span&gt;/gi, \"\\\\\");\n  }\n  function replaceInString(str) {\n    str = str.replace(/<[\\/]?pre[^>]*>/gi, \"\");\n    str = str.replace(/<br\\s*[\\/]?[^>]*>/gi, \"\\n\");\n    str = str.replace(/<div[^>]*>/gi, \"\\n\");\n    // Thanks Graham A!\n    str = str.replace(/<[\\/]?span[^>]*>/gi, \"\");\n    str = str.replace(/<\\/div[^>]*>/g, \"\\n\");\n    return replaceHTMLElementsInString(str);\n  }\n\n  replacementElements = [\n    { from: \"\\\\<\", to: \"➿\", is_plaintext: true },\n    { from: \"\\\\>\", to: \"➰\", is_plaintext: true },\n    { from: \"&amp;\", to: \"&\" },\n    { from: \"&nbsp;\", to: \" \" },\n    { from: \"&tab;\", to: \"\t\" },\n  ];\n\n  restoreElements = [\n    { from: \"➿\", to: \"<\", is_plaintext: true },\n    { from: \"➰\", to: \">\", is_plaintext: true },\n    { from: \"&amp;\", to: \"&\", is_plaintext: true },\n    { from: \"&amp;lt;\", to: \"&lt;\", is_plaintext: true },\n    { from: \"&amp;gt;\", to: \"&gt;\", is_plaintext: true },\n  ];\n\n  function replaceHTMLElementsInString(str) {\n    for (let i = 0; i < replacementElements.length; i++) {\n      if (replacementElements[i].is_plaintext) {\n        str = str.replaceAll(replacementElements[i].from, replacementElements[i].to);\n      } else {\n        str = str.replace(new RegExp(replacementElements[i].from, \"gi\"), replacementElements[i].to);\n      }\n    }\n    return str;\n  }\n\n  function restoreHTMLElementsInString(str) {\n    for (let i = 0; i < restoreElements.length; i++) {\n      str = str.replace(new RegExp(restoreElements[i].from, \"gi\"), restoreElements[i].to);\n    }\n    return str;\n  }\n</script>\n"
+                }
+            ],
+            "type": 0
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 2**<br />Action value methods",
+                "Method for estimating the values of actions and estimates to make action selection decisions. Average the rewards actually received.<br />$$<br />Q_t(a) = \\frac{\\text{sum of rewards when a taken prior to t}}{\\text{number of times a taken prior to t}} = \\frac{\\sum_{i=1}^{t-1}R_i \\cdot \\mathbbm{1}_{A_i=a}}{\\sum_{i=1}^{t-1}\\mathbbm{1}_{A_i=a}}<br />$$<br />where $\\mathbbm{1}_\\text{predicate}$ denotes the random variable that is 1 if predicate is true and 0 if it is not."
+            ],
+            "guid": "IkTzik]A#?",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap2"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 2**<br />Estimation of action variable after training",
+                "$$<br />Q_n = \\frac{R_{1} + R_{2} + \\ldots + R_{n-1}}{n-1}<br />$$<br />Where $R_i$ denotes the reward received after the $i$th selection of this action and $Q_n$ denotes the estimate of its action value after it as been selected $n-1$ times."
+            ],
+            "guid": "GDtGWEGpo8",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap2"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 2**<br />Incremental reward",
+                "$$<br />Q_{n+1} = Q_n + \\frac{1}{n}\\left[ R_n - Q_n \\right]<br />$$<br />The general form is <br />$$<br />\\text{NewEstimate} \\leftarrow \\text{OldEstimate} + \\text{StepSize} \\left[ \\text{Target} - \\text{OldEstimate} \\right]<br />$$"
+            ],
+            "guid": "pdhRf()BL`",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap2"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 2**<br />Non stationary incremental rule",
+                "Method to give more weight to recent rewards rather than to long-past rewards.<br />$$<br />Q_{n+1} = Q_n + \\alpha \\left[ R_n - Q_n \\right]<br />$$<br />$Q_{n+1}$ becomes a weighted average of past rewards and the initial estimate $Q_{1}$<br />$$<br />Q_{n+1} = \\left( 1 - \\alpha \\right)^{n}Q_{1} + \\sum_{i=1}^{n}\\alpha \\left( 1 - \\alpha \\right)^{n-i}R_i<br />$$"
+            ],
+            "guid": "5k{E{EcLz",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap2"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 3**<br />Expected return",
+                "We seek to maximize the expected return, where the return, denoted $G_t$ is defined as some specific function of the reward sequence. Simplest case, the return is the sum of the rewards.<br />$$<br />G_t = R_{t+1} + R_{t+2} + \\ldots + R_{T}<br />$$"
+            ],
+            "guid": "J>;p6dZ#jH",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap3"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 3**<br />Discounting",
+                "The agent tries to select actions so that the sum of the discounted rewards it receives over the future is maximized. It chooses $A_t$ to maximize the expected discounted return<br />$$<br />G_t = R_{t+1} + \\gamma R_{t+2} + \\gamma^{2}R_{t+3}+\\ldots = \\sum_{k=0}^{\\infty}\\gamma^{k}R_{t+k+1}<br />$$"
+            ],
+            "guid": "hUXu`0V+{1",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap3"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 3**<br />Episodes",
+                "An repisode refers to a sequence of states, actions and rewards that an agent experiences from an initial state until a terminal state. Can be mathematically represented as<br />$$<br />\\left( s_{0},a_{0},r_{0},s_{1},a_{1},r_{1},\\ldots,s_{T} \\right)<br />$$"
+            ],
+            "guid": "K=$MW-3^/R",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap3"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 3**<br />Value functions",
+                "A function that estimates how good it is for the agent to perform a given action in a given state."
+            ],
+            "guid": "gDr{P08ZEt",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap3"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 3**<br />Policy",
+                "Value functions are defined with respect to particular ways of acting called policies. A policy is a mapping from states to probabilities of selecting each possbile action. If the agent is following policy $\\pi$ at time $t$, then $\\pi \\left( a | s \\right)$ is the probability that $A_t = a$ if $S_t = s$."
+            ],
+            "guid": "GYpoJM(XFn",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap3"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 3**<br />The value function of state $s$ under a policy $\\pi$ denoted $v_{\\pi} \\left( s \\right)$",
+                "It the expected return when starting in s and following $\\pi$ thereafter. For MDPs we can define<br />$$<br />v_{\\pi}(s) = \\mathcal{E} \\left[ G_t | S_t = s \\right] = \\mathcal{E}_{\\pi} \\left[ \\sum_{k=0}^{\\infty}\\gamma^{k}R_{t+k+1} | S_t = s \\right], \\text{ for all } s \\in \\mathcal{S}<br />$$"
+            ],
+            "guid": "yV5<lnwKv<",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap3"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 3**<br />Bellman equation",
+                "$$<br />v_{\\pi}(s) = \\mathcal{E} \\left[ G_t | S_t = s \\right] = \\sum_{a}\\pi \\left( a|s \\right)\\sum_{s',r}p \\left( s',r | s,a \\right) \\left[ r + \\gamma v_{\\pi} (s') \\right], \\text{ for all } s \\in \\mathcal{S}<br />$$<br />The bellman equation expresses a relationship between the value of a state and the values of its successor states."
+            ],
+            "guid": "AiUIf]bk6Y",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap3"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 4**<br />Iterative policy evaluation",
+                "An iterative algorithm to calculate the value of a state by using the Bellman eequation for $v_{\\pi}$. The algorithm works by choosing $v_{0}$ arbitrarly and then iterating up to $v_{\\pi}$<br />$$<br />v_{k+1} = \\mathcal{E}_{\\pi} \\left[ R_{t+1} + \\gamma v_k \\left( S_{t + 1} \\right) | S_t = s \\right]<br />$$<br />A solution is guaranteed if $\\gamma < 1$."
+            ],
+            "guid": "l$bT6j4xQo",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap4"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 4**<br /> Policy Improvement",
+                "For a given state it is possible to calculate if there is a better policy by selecting the action a in the state s and thereafter follow the existing policy $\\pi$. If this yields greater $v_{\\pi}(s)$ then in theory it is always better to do a in s."
+            ],
+            "guid": "Rc`SFK>)uk",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap4"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 4**<br />Value iteration",
+                "Stopping the policy evaluation after just one update of each state. This still guarantees convergence but is less expensive."
+            ],
+            "guid": "pv-{;n=hH#",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap4"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 4**<br />Asynchronous Dynamic Programming",
+                "Does not need to sweep the entire set of states. Instead these algorithms update the values of states in any order whatsoever, using whatever values of other states happen to be available. To converge correctly the ADP must continue to update the values of all states."
+            ],
+            "guid": "hYe9>fS|]/",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap4"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 3**<br />Discounted rewards (easier formula)",
+                "Since<br />$$<br />G_t = \\sum_{k=0}^{\\infty}\\gamma^{k}R_{t+k+1}<br />$$<br />If we have set numbers of rewards<br />$$<br />\\begin{aligned}<br />    &g_{5} = g_t = 0 \\\\<br />    &g_{4} = r_{5} + \\gamma g_5 = \\\\<br />    &\\vdots \\\\<br />    &g_{0} = r_{1} + \\gamma g_{1} =<br />\\end{aligned}<br />$$"
+            ],
+            "guid": "ldK99jU`{,",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap3"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 3**<br />Rewrite equation to state",
+                "ex<br />$$<br />\\theta_{t+1} = b \\theta_t + c \\theta_{t-1} + da_t<br />$$<br />put<br />$$<br />s_{t} = \\begin{pmatrix}<br />    \\theta_{t} \\\\ \\theta_{t-1}<br />\\end{pmatrix}<br />$$<br />and <br />$$<br />\\theta_t = \\begin{pmatrix}<br />    1 & 0<br />\\end{pmatrix} s_t<br />$$<br />Then<br />$$<br />s_{t+1} = \\begin{pmatrix}<br />    \\theta_{t+1} \\\\ \\theta_t<br />\\end{pmatrix} = \\begin{pmatrix}<br />    b & c \\\\ 1 & 0<br />\\end{pmatrix}s_t<br />$$"
+            ],
+            "guid": "J-8l}$PTV+",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap3"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 5**<br />First-visit MC prediction",
+                "A Monte Carlo method to estimate the $v_{\\pi}(s)$, the value of a state s under policy $\\pi$.<br /><br />The First-visit MC method estimates this as the average of the returns following first visits to the state s.<br /><br />For every new episode it the value function can be updated at the first visit.<br /><br />Error falls as $\\frac{1}{\\sqrt{n}}$"
+            ],
+            "guid": "J1cc|l60:p",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap5"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 6**<br />TD one-step for updating Value function",
+                "Does only need to wait to time $t + 1$ instead of at the end of the episode which MC methods do.<br />$$<br />V(S_t) \\leftarrow V(S_t) + \\alpha \\left[ R_{t+1} + \\gamma V(S_{t+1}) - V(S_t) \\right]<br />$$"
+            ],
+            "guid": "sKmlJ_FRe@",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap6"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 5**<br />Why is estimating action values (q*) especially important in Monte Carlo methods without a model?",
+                "Without a model, we cannot simulate next states to evaluate actions using only state values. Therefore, we must estimate action values (q*(s, a)) directly to make policy decisions. Monte Carlo methods do this by averaging returns following visits to state–action pairs, using first-visit or every-visit approaches.<br />However, to ensure all state–action pairs are explored (and thus estimated), we need continual exploration, typically via:<br /><br />- The assumption of exploring starts, or<br />- Using stochastic policies where all actions have nonzero probability."
+            ],
+            "guid": "n[>RZz]DDT",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap5"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 5**<br />How can Monte Carlo methods be used for control (finding optimal policies)?",
+                "Monte Carlo control uses **Generalized Policy Iteration (GPI)** to find optimal policies:  <br />- Alternates between **policy evaluation** and **policy improvement**  <br />- Evaluation estimates $q^{\\pi_k}(s, a)$ from returns  <br />- Improvement uses a greedy policy:  <br />  $$<br />  \\pi_{k+1}(s) = \\arg\\max_a q^{\\pi_k}(s, a)<br />  $$  <br />- Under **exploring starts** and **infinite episodes**, the method converges to $\\pi^*$ and $q^*$"
+            ],
+            "guid": "d/-97f9w9m",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap5"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 5**  <br />What is Generalized Policy Iteration (GPI)?",
+                "GPI is an iterative process that alternates:  <br />- **Policy Evaluation:** Estimate $q^\\pi$  <br />- **Policy Improvement:** Update $\\pi$ to be greedy w.r.t. $q^\\pi$  <br /><br />Together, these steps cause both the policy and value estimates to improve and converge toward optimality."
+            ],
+            "guid": "Dlo!x<S6Q@",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap5"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 5**  <br />What is the greedy policy with respect to an action-value function $q$?",
+                "The greedy policy selects the action with the highest value for each state:  <br />$$<br />\\pi(s) = \\arg\\max_a q(s, a)<br />$$"
+            ],
+            "guid": "r),sq6^XI0",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap5"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 5**  <br />What is Monte Carlo Policy Iteration?",
+                "Monte Carlo Policy Iteration alternates:  <br />1. **Policy Evaluation:** Estimate $q^{\\pi_k}$ from returns  <br />2. **Policy Improvement:** Make the policy greedy:  <br /><br />$$<br />\\pi_{k+1}(s) = \\arg\\max_a q^{\\pi_k}(s, a)<br />$$<br /><br />This process converges to $\\pi^*$ under the assumptions of exploring starts and infinite episodes."
+            ],
+            "guid": "r*X|H?16HN",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap5"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 5**  <br />What does the policy improvement theorem say (informally)?",
+                "If a new policy $\\pi'$ is greedy with respect to $q^\\pi$, then for all $s$:<br /><br />$$<br />q^\\pi(s, \\pi'(s)) \\geq v^\\pi(s)<br />$$<br /><br />This means $\\pi'$ is at least as good as $\\pi$, and strictly better if the inequality is strict in any state."
+            ],
+            "guid": "Q>`Z#ka669",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap5"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 5**  <br />What is the difference between on-policy and off-policy methods?",
+                "- **On-policy:** Improves and evaluates the same policy used to generate data  <br />- **Off-policy:** Evaluates/improves a different policy than the one used to generate data"
+            ],
+            "guid": "C<`v)r~19$",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap5"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 5**  <br />What is an $\\epsilon$-greedy policy?",
+                "A policy that selects:  <br />- The greedy action with probability $1 - \\epsilon + \\frac{\\epsilon}{|A(s)|}$  <br />- Any other action with probability $\\frac{\\epsilon}{|A(s)|}$<br /><br />Ensures sufficient exploration while favoring the best-known action."
+            ],
+            "guid": "BERC,KaXzn",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap5"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 5**  <br />What is an $\\epsilon$-soft policy?",
+                "A policy where $\\pi(a|s) > 0$ for all $s$ and $a$:<br /><br />$$<br />\\pi(a|s) \\geq \\frac{\\epsilon}{|A(s)|}, \\quad \\text{for some } \\epsilon > 0<br />$$<br /><br />It ensures all actions are explored with non-zero probability."
+            ],
+            "guid": "d5u86d+nr,",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap5"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 5**  <br />What is the general idea of on-policy first-visit Monte Carlo control without exploring starts?",
+                "- Uses first-visit MC to estimate $q^\\pi$<br />- Improves $\\pi$ to an $\\epsilon$-greedy policy w.r.t. $q^\\pi$<br />- Guarantees improvement via the policy improvement theorem  <br />- Repeats this process using GPI"
+            ],
+            "guid": "se+eJz89N-",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap5"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 5**  <br />Why is an $\\epsilon$-greedy policy guaranteed to improve an $\\epsilon$-soft policy?",
+                "By the **policy improvement theorem**, for all $s$:<br /><br />$$<br />q^\\pi(s, \\pi'(s)) = \\sum_a \\pi'(a|s) q^\\pi(s, a) \\geq v^\\pi(s)<br />$$<br /><br />So $\\pi' \\succeq \\pi$ (equal or better)."
+            ],
+            "guid": "b5.hzdBB(f",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap5"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 5**  <br />What are the steps of on-policy first-visit MC control with $\\epsilon$-soft policies?",
+                "1. Initialize:<br />   - $\\pi$: arbitrary $\\epsilon$-soft policy  <br />   - $Q(s, a)$: arbitrary values  <br />2. Repeat:<br />   - Generate an episode using $\\pi$  <br />   - For each $(s, a)$ in episode:  <br />     - Compute return $G$  <br />     - Update $Q(s, a)$ with sample average  <br />     - Improve $\\pi$ to be $\\epsilon$-greedy w.r.t. $Q$"
+            ],
+            "guid": "ITJ%E0k7^I",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap5"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 6**  <br />How is the episode structure different in action-value learning?",
+                "Episodes are sequences of **state–action pairs**, not just states:<br /><br />$$<br />S_t, A_t, R_{t+1}, S_{t+1}, A_{t+1}, R_{t+2}, \\dots<br />$$<br /><br />We learn values of state–action pairs instead of states."
+            ],
+            "guid": "EE)Yzqbx_z",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap6"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 6**  <br />What is the Sarsa update rule?",
+                "$$<br />Q(S_t, A_t) \\leftarrow Q(S_t, A_t) + \\alpha \\left[ R_{t+1} + Q(S_{t+1}, A_{t+1}) - Q(S_t, A_t) \\right]<br />$$<br /><br />If $S_{t+1}$ is terminal, $Q(S_{t+1}, A_{t+1}) = 0$."
+            ],
+            "guid": "D>n;t|gP7T",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap6"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 6**  <br />What is the general structure of the Sarsa control algorithm?",
+                "1. Initialize $Q(s,a)$ arbitrarily, choose initial $S_0, A_0$  <br />2. Repeat for each episode:<br />   - For each step:<br />     - Take $A_t$, observe $R_{t+1}, S_{t+1}$<br />     - Choose $A_{t+1}$ from $\\pi$ (e.g., $\\epsilon$-greedy)<br />     - Update $Q(S_t, A_t)$ with Sarsa update<br />     - $S_t \\leftarrow S_{t+1}$, $A_t \\leftarrow A_{t+1}$"
+            ],
+            "guid": "v9w8Y_ZWK#",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap6"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 6**  <br />Under what conditions does Sarsa converge?",
+                "Sarsa converges with probability 1 if:<br />- All $(s, a)$ are visited infinitely often<br />- Step sizes $\\alpha_t$ satisfy standard conditions (e.g., $\\sum \\alpha_t = \\infty$, $\\sum \\alpha_t^2 < \\infty$)<br />- Policy converges to greedy (e.g., with $\\epsilon = 1/t$)"
+            ],
+            "guid": "BrGMr/d:,8",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap6"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 6**  <br />What is the TD error used in Sarsa?",
+                "The TD error for action values is:<br /><br />$$<br />\\delta_t = R_{t+1} + Q(S_{t+1}, A_{t+1}) - Q(S_t, A_t)<br />$$<br /><br />It drives the update of $Q(S_t, A_t)$."
+            ],
+            "guid": "Nf&OU;u1qh",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap6"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 6**  <br />What is Temporal-Difference (TD) learning?",
+                "TD learning is a prediction method that combines:<br />- **Bootstrapping** (like dynamic programming): updates estimates based on other learned estimates.<br />- **Sampling** (like Monte Carlo): learns from raw experience without a model.<br /><br />TD updates value estimates after **each step** using the TD error:<br /><br />$$<br />V(S_t) \\leftarrow V(S_t) + \\alpha \\left[ R_{t+1} + V(S_{t+1}) - V(S_t) \\right]<br />$$"
+            ],
+            "guid": "s;vUt)]#|2",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap6"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 6**  <br />How does Sarsa differ from Monte Carlo (MC) methods?",
+                "- **Monte Carlo (MC):** Updates after full episodes; uses **returns** from entire trajectory.<br />- **Sarsa (TD):** Updates after **each step**; uses **bootstrapped estimate** based on $Q(S_{t+1}, A_{t+1})$.<br /><br />Sarsa learns **online and incrementally**, while MC requires **complete episodes** before learning."
+            ],
+            "guid": "yJ%TB!IBg$",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap6"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 6**  <br />What is Q-learning in reinforcement learning?",
+                "Q-learning is an **off-policy TD control algorithm** that learns the **optimal action-value function** $q^*(s,a)$ by updating:<br /><br />$$<br />Q(S_t, A_t) \\leftarrow Q(S_t, A_t) + \\alpha \\left[ R_{t+1} + \\max_a Q(S_{t+1}, a) - Q(S_t, A_t) \\right]<br />$$<br /><br />- Learns from behavior **independent of the target policy**.<br />- Guaranteed to converge to $q^*$ under suitable conditions."
+            ],
+            "guid": "cPy@Hr{=Mt",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap6"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 6**  <br />What are the conditions for Q-learning to converge?",
+                "Q-learning converges to the optimal value function $q^*$ **with probability 1** if:<br />- All state–action pairs are visited **infinitely often**.<br />- The step-size parameters $\\alpha$ satisfy standard **stochastic approximation** conditions."
+            ],
+            "guid": "AKrKi6Q^>F",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap6"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 6**  <br />Comparison: Q-learning vs. Sarsa vs. Monte Carlo",
+                "| Method         | Type       | Policy Used    | Update Target                      | When Updates Occur       |<br />|----------------|------------|----------------|------------------------------------|---------------------------|<br />| **Q-learning** | Off-policy | Greedy policy  | $R + \\max_a Q(S', a)$              | After each step           |<br />| **Sarsa**      | On-policy  | Behavior policy| $R + Q(S', A')$                    | After each step           |<br />| **MC**         | On-policy  | Behavior policy| Return from episode                | After episode ends        |<br /><br />Key difference: Q-learning is off-policy and uses a **max** operator, while Sarsa and MC use the **actual action taken**."
+            ],
+            "guid": "K28N[_.[1p",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap6"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 6**  <br />Why is Q-learning considered off-policy?",
+                "Q-learning is off-policy because it learns the **optimal policy** (target policy) independently of the policy used to **generate behavior** (behavior policy).<br /><br />It updates using:<br /><br />$$<br />Q(S_t, A_t) \\leftarrow Q(S_t, A_t) + \\alpha \\left[ R_{t+1} + \\max_a Q(S_{t+1}, a) - Q(S_t, A_t) \\right]<br />$$<br /><br />The action used in the update is **not necessarily the one actually taken**, but the one that would be chosen **greedily**."
+            ],
+            "guid": "jpwEojEJu1",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap6"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 6**  <br />What does \"off-policy\" mean in reinforcement learning?",
+                "**Off-policy** methods learn about a **target policy** (often the optimal policy) while following a **different behavior policy**.<br /><br />- Enables learning optimal behavior while still exploring.<br />- Example: Q-learning follows an $\\epsilon$-greedy behavior policy but updates as if it follows a greedy target policy."
+            ],
+            "guid": "pPu.jl2niv",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap6"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Chapter 6**  <br />Q-learning: Algorithm Pseudocode",
+                "Q-learning (Off-policy TD Control)<br /><br />**Initialize**  <br />- $Q(s, a)$ arbitrarily for all $s \\in S$, $a \\in A(s)$  <br />- $Q(\\text{terminal}, \\cdot) = 0$  <br /><br />**Loop for each episode:**  <br />- Initialize $S$  <br />- Choose $A$ from $S$ using policy derived from $Q$ (e.g., $\\epsilon$-greedy)<br /><br />**Loop for each step of episode:**  <br />1. Take action $A$, observe reward $R$ and next state $S'$  <br />2. Update:  <br />$$<br />Q(S, A) \\leftarrow Q(S, A) + \\alpha \\left[ R + \\max_{a} Q(S', a) - Q(S, A) \\right]<br />$$  <br />3. $S \\leftarrow S'$, choose next $A$<br /><br />**Until** $S$ is terminal"
+            ],
+            "guid": "DQy=HFAFLG",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "RL_kap6"
+            ]
+        }
+    ],
+    "reviewLimit": null,
+    "reviewLimitToday": null
+}
