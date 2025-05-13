@@ -71,7 +71,7 @@
                 "hardFactor": 1.2,
                 "ivlFct": 1.0,
                 "maxIvl": 36500,
-                "perDay": 20
+                "perDay": 99
             },
             "reviewOrder": 0,
             "secondsToShowAnswer": 0.0,
@@ -434,6 +434,622 @@
                 "diffraction",
                 "Ewald",
                 "X-ray"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Interatomic Potential**<br />What is a typical form of the interatomic potential between two atoms?",
+                "A simple form of the interatomic potential $V(r)$ as a function of distance $r$ is:<br /><br />$$<br />V(r) = -\\frac{A}{r^n} + \\frac{B}{r^m}<br />$$<br /><br />where:<br />- First term: attractive force<br />- Second term: repulsive force<br />- $n, m > 0$, typically $m > n$<br /><br />Repulsion dominates at short distances, while attraction dominates at moderate distances."
+            ],
+            "guid": "E>!Z:*KZ[~",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "InteratomicPotential"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Ionic Bonding**<br />Describe the process of ionic bonding and the forces involved.",
+                "- Ionic bonding involves the transfer of electrons from an **electropositive atom** to an **electronegative atom**.<br />- Results in the formation of positive and negative ions.<br />- The **bonding force** is the **Coulomb attraction** between the oppositely charged ions:<br /><br />  $$<br />  F = \\frac{q_1 q_2}{4\\pi \\epsilon_0 r^2}<br />  $$<br /><br />- Examples include NaCl, where Na donates an electron to Cl."
+            ],
+            "guid": "p)$e{m?lBU",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "IonicBonding"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Madelung Constant**<br />What is the Madelung constant and its significance in ionic bonding?",
+                "- The **Madelung constant** $M$ accounts for the electrostatic interactions with all neighboring ions in a crystal lattice.<br />- Specific to the crystal structure.<br />- Enhances the **total Coulomb energy gain** beyond that of just one ion pair.<br />- For NaCl, $M \\approx 1.7476$.<br />- Appears in lattice energy formula:<br /><br />  $$<br />  E_\\text{lattice} = -M \\frac{e^2}{4\\pi \\epsilon_0 r}<br />  $$"
+            ],
+            "guid": "FwE(3H/;}f",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "IonicBonding",
+                "Madelung"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Quantum Effects in Ionic Bonding**<br />Why are quantum mechanics important even for ionic bonding?",
+                "- The **equilibrium interatomic distance** depends on quantum mechanical repulsion.<br />- The **repulsive potential** causes the potential minimum to lie slightly above the purely Coulombic prediction.<br />- Quantum mechanics is essential to calculate:<br />  - The equilibrium distance $a$.<br />  - The accurate cohesive energy.<br />- The **cohesive energy per atom** in ionic solids is typically several eV."
+            ],
+            "guid": "JmRr3B!Dsr",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "IonicBonding",
+                "Quantum"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Covalent Bonding**<br />What is covalent bonding and what are its key features?",
+                "- **Covalent bonding** involves **true sharing of electrons** between atoms.<br />- Found in elements with **half-filled outer shells** (e.g., carbon).<br />- Bonds are **highly directional** and **very stable**.<br />- **Cohesive energies** are typically several electron volts per atom.<br />- Examples: **Diamond, graphene, graphite, fullerenes, carbon nanotubes**."
+            ],
+            "guid": "p6Zyhu?35^",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "CovalentBonding"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Carbon Bonding**<br />How are covalent bonds formed in carbon-based solids like diamond and graphene?",
+                "- In **diamond**:<br />  - 2s + 3 × 2p orbitals mix to form **four sp³ hybrid orbitals**.<br />  - Arranged in **tetrahedral configuration**.<br /><br />- In **graphene/graphite**:<br />  - 2s + 2 × 2p orbitals form **three sp² hybrid orbitals** (planar, 120° apart).<br />  - Remaining p orbital is **perpendicular to plane**."
+            ],
+            "guid": "A|GhROy-}+",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Carbon",
+                "CovalentBonding"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Hydrogen Molecule Bonding**<br />How do we model the bonding in the hydrogen molecule?",
+                "- Start with **ground-state wavefunctions** of individual H atoms: $\\psi_A$, $\\psi_B$.<br />- Total wavefunction must be **antisymmetric** (Pauli principle).<br />- Two possibilities:<br />  - **Symmetric spatial part** + **antisymmetric spin part** (Singlet, spin 0).<br />  - **Antisymmetric spatial part** + **symmetric spin part** (Triplet, spin 1).<br /><br />- Bonding occurs when **electron density accumulates** between nuclei (singlet state)."
+            ],
+            "guid": "ll>U_tYKDs",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "CovalentBonding",
+                "Hydrogen"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Bonding vs Antibonding States**<br />What is the difference between bonding and antibonding in the hydrogen molecule?",
+                "- **Bonding (Singlet state)**:<br />  - Symmetric spatial wavefunction.<br />  - Opposite spins allow **charge accumulation** between nuclei.<br />  - Leads to **lower energy** (bond formation).<br /><br />- **Antibonding (Triplet state)**:<br />  - Antisymmetric spatial wavefunction.<br />  - Parallel spins **deplete electron density** between nuclei.<br />  - No bond formation, **higher energy**."
+            ],
+            "guid": "CHg(64?EWK",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "BondingStates",
+                "CovalentBonding"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Heitler–London Approximation**<br />What is the Heitler–London method for bonding in H₂?",
+                "- Form two-electron wavefunction from atomic H wavefunctions.<br />- Approximate molecular energy by:<br /><br />  $$<br />  E = \\langle \\Psi | H | \\Psi \\rangle<br />  $$<br /><br />- Result:<br />  - Singlet (bonding) state: lower energy with minimum at ~1.5 Bohr radii.<br />  - Triplet (antibonding) state: higher energy.<br />- Based on **variational principle**: approximate, but close to true ground-state energy."
+            ],
+            "guid": "M-@blOnvpP",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "CovalentBonding",
+                "HeitlerLondon"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Exchange Energy and Spin Coupling**<br />How does exchange energy relate to spin orientations?",
+                "- Energy depends on **relative spin directions** of electrons.<br />- Exchange energy $X$ determines spin preference:<br />  - $X < 0$: **Antiferromagnetic** (opposite spins favored, bonding state).<br />  - $X > 0$: **Ferromagnetic** (parallel spins favored).<br /><br />- In H₂, $X$ is **always negative** ⇒ favors singlet (antiparallel spins).<br />- Basis for understanding **magnetism** in solids later."
+            ],
+            "guid": "C+`Dk1rakU",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "CovalentBonding",
+                "Magnetism"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Metallic Bonding**<br />What characterizes metallic bonding in solids?",
+                "- **Valence electrons** are **delocalized** and free to move between ion cores.<br />- **Conduction electrons** are responsible for **electrical conductivity**.<br />- Metallic bonding is found where **removing outer electrons** doesn't cost too much energy.<br />- Energy gain comes mainly from **lowered kinetic energy** of delocalized electrons."
+            ],
+            "guid": "e%?||KEYaE",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "MetallicBonding"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Metallic Bonding: Energy Contributions**<br />What energy contributions lower the total energy in metallic bonding?",
+                "- **Kinetic Energy**:<br />  - Lower for delocalized electrons than for localized electrons.<br />  - Energy gain due to **lower curvature** of wavefunctions.<br />  <br />- **Potential Energy**:<br />  - Electrons experience an **attractive potential**.<br />  - Due to **Pauli exclusion principle** and **direct Coulomb repulsion**, electrons avoid each other."
+            ],
+            "guid": "hN496LYT^E",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Energy",
+                "MetallicBonding"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Metallic Structures**<br />Why do metals prefer close-packed structures?",
+                "- **No directional bonding** in metals.<br />- **Close packing** maximizes:<br />  - Overlap of **valence orbitals**.<br />  - **Delocalization** and **kinetic energy gain**.<br />  - Number of **nearest neighbors**.<br />- Leads to stronger metallic bonding."
+            ],
+            "guid": "Hq#i_+31-Z",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "MetallicBonding",
+                "Structure"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Strength of Metallic Bonding**<br />How strong is metallic bonding compared to other types?",
+                "- Metallic bonding is generally **weaker** than **covalent** or **ionic** bonding.<br />- Typical bond strength: **a few electron volts per atom**.<br />- **Transition metals** show stronger bonding:<br />  - **s and p** electrons are delocalized (metallic).<br />  - **d electrons** form **localized covalent bonds** (mixed bonding)."
+            ],
+            "guid": "C]JqB[WUau",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "MetallicBonding",
+                "Strength"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Hydrogen Bonding**<br />What is hydrogen bonding and when does it occur?",
+                "- Hydrogen forms **one covalent bond** (one electron).<br />- When bonded to **highly electronegative atoms** (F, O), H becomes **partially positive**.<br />- Attracts **partial negative charges** in other molecules ⇒ **electrostatic bond**.<br />- **Weaker** than covalent bonds but can reach **hundreds of meV per atom**.<br />- Important in **ice** and **DNA double helix**."
+            ],
+            "guid": "I>_;{iQ_P{",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "HydrogenBonding"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Van der Waals Bonding**<br />What is van der Waals bonding?",
+                "- Arises from **quantum fluctuations** in the electron cloud ⇒ **fluctuating dipoles**.<br />- Dipoles **polarize neighboring atoms**, creating an **attractive interaction**.<br />- **Very weak bonding** (meV per atom).<br />- Present in **all solids** but dominant only in **noble gas solids**.<br />- **Pure van der Waals crystals** exist only at **very low temperatures**."
+            ],
+            "guid": "rJv)$K#B)=",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "VanDerWaalsBonding"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Bloch's Theorem**  <br />What is Bloch’s theorem and why is it important in solid state physics?",
+                "- In a **periodic potential** $V(\\mathbf{r}) = V(\\mathbf{r} + \\mathbf{R})$, solutions to Schrödinger's equation are:<br />  $$<br />  \\psi_{\\mathbf{k}}(\\mathbf{r}) = e^{i \\mathbf{k} \\cdot \\mathbf{r}} u_{\\mathbf{k}}(\\mathbf{r})<br />  $$<br />- Here, $u_{\\mathbf{k}}(\\mathbf{r})$ has the **same periodicity** as the lattice:<br />  $$<br />  u_{\\mathbf{k}}(\\mathbf{r}) = u_{\\mathbf{k}}(\\mathbf{r} + \\mathbf{R})<br />  $$<br />- Interpretation:<br />  - Electrons behave like **free particles** modulated by the periodic lattice.<br />  - Explains **band structures**, **crystal momentum**, and **energy gaps** in crystals."
+            ],
+            "guid": "c;6Ev$!k<C",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "BlochTheorem"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Brillouin Zones**  <br />What is a Brillouin zone?",
+                "- The **first Brillouin zone** is the set of points in reciprocal space that are **closer to the origin** than to any other reciprocal lattice point.<br />- Built using the **Wigner-Seitz method** in **reciprocal space**.<br />- It defines the **primitive cell** of the reciprocal lattice.<br />- Important for:<br />  - Classifying allowed $\\mathbf{k}$-vectors.<br />  - Understanding **electronic band structures** and **phonon spectra**."
+            ],
+            "guid": "i(9|u}M?-q",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "BrillouinZones"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**First vs Second Brillouin Zone**  <br />What are the first and second Brillouin zones?",
+                "- **First Brillouin Zone**:<br />  - Region of reciprocal space closest to the origin.<br />- **Second Brillouin Zone**:<br />  - Points that are farther than the first zone but closer to second-nearest reciprocal lattice points.<br />- Higher zones contain **equivalent information** because of the periodicity of reciprocal space."
+            ],
+            "guid": "HOj`9kC3ys",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "BrillouinZones",
+                "FirstSecond"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Constructing a Brillouin Zone**  <br />How do you calculate (construct) a Brillouin zone?",
+                "- **Step 1**: Find reciprocal lattice points $\\mathbf{G}$.<br />- **Step 2**: Draw vectors from the origin to each $\\mathbf{G}$.<br />- **Step 3**: Draw **perpendicular bisectors** of these vectors.<br />- **Step 4**: The region enclosed closest to the origin is the **first Brillouin zone**.<br /><br />- Reciprocal lattice vectors from real space vectors:<br />  $$<br />  \\mathbf{b}_1 = 2\\pi \\frac{\\mathbf{a}_2 \\times \\mathbf{a}_3}{\\mathbf{a}_1 \\cdot (\\mathbf{a}_2 \\times \\mathbf{a}_3)}<br />  $$<br />  (plus cyclic permutations for $\\mathbf{b}_2$ and $\\mathbf{b}_3$).<br /><br />- In 1D: simple intervals.<br />- In 2D: hexagonal or square shapes.<br />- In 3D: complex polyhedra like truncated octahedra (FCC)."
+            ],
+            "guid": "Rh%zDj-HM7",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "BrillouinZones",
+                "construction"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Structure Factor**  <br />What is the structure factor in crystallography?",
+                "The structure factor is a complex quantity that determines the amplitude and phase of waves scattered by atoms in a crystal. It influences diffraction intensities and is given by:  <br />$$<br />F(\\mathbf{G}) = \\sum_{j=1}^{N} f_j e^{i \\mathbf{G} \\cdot \\mathbf{r}_j}<br />$$"
+            ],
+            "guid": "L8NI943ZgD",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "basics",
+                "structure-factor"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Structure Factor Terms**  <br />What do $f_j$ and $\\mathbf{r}_j$ represent in the structure factor formula?",
+                "- $f_j$: Atomic scattering factor for the $j$-th atom (depends on atomic type and wavelength).  <br />- $\\mathbf{r}_j$: Position vector of the $j$-th atom in the unit cell."
+            ],
+            "guid": "faIFnYA9mZ",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "components",
+                "structure-factor"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Physical Meaning**  <br />What does the modulus squared of the structure factor $|F(\\mathbf{G})|^2$ represent?",
+                "It represents the **intensity** of the diffracted beam at the reciprocal lattice point $\\mathbf{G}$."
+            ],
+            "guid": "DF[Wksy>jc",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "interpretation",
+                "structure-factor"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Bragg and Structure Factor**  <br />How is the structure factor related to Bragg's law?",
+                "Bragg's law determines the possible directions of diffraction, while the structure factor determines the **intensity** and whether the reflection will actually occur (i.e., is visible)."
+            ],
+            "guid": "DNi9Y^VPU}",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "bragg",
+                "structure-factor"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Stress**  <br />What is the definition of stress in a solid, and how is it mathematically defined?",
+                "Stress is the internal force per unit area that arises within a material to balance an externally applied force. Mathematically,<br />$$<br />\\sigma = \\frac{F}{A}<br />$$<br />where $F$ is the applied force and $A$ is the cross-sectional area over which the force acts."
+            ],
+            "guid": "i>.pA*`WsQ",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statemechanical_properties"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Strain**  <br />How is strain defined in the context of solid-state physics, and is it a dimensionless quantity?",
+                "Strain quantifies the relative deformation of a material due to applied stress. For a change in length $\\Delta L$ from original length $L_0$,<br />$$<br />\\epsilon = \\frac{\\Delta L}{L_0}<br />$$<br />Strain is dimensionless."
+            ],
+            "guid": "cDN4K<aa^$",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statemechanical_properties"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Deformation**  <br />What is the difference between elastic and plastic deformation?",
+                "**Elastic deformation** is reversible; material returns to its original shape after the stress is removed.  <br />**Plastic deformation** is permanent; the material does not return to its original shape after stress is removed."
+            ],
+            "guid": "Nd}Ys{4VO?",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statemechanical_properties"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Young's modulus**  <br />What is Young's modulus, how is it defined mathematically, and what does it physically represent?",
+                "Young's modulus $E$ measures a material's stiffness under tensile or compressive stress.  <br />$$<br />E = \\frac{\\sigma}{\\epsilon}<br />$$<br />It represents the ratio of stress to strain in the elastic (linear) regime."
+            ],
+            "guid": "q;6gFOPVp1",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statemechanical_properties"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Shear modulus and bulk modulus**  <br />How are the shear modulus ($G$) and bulk modulus ($K$) defined?",
+                "Shear modulus:<br />$$<br />G = \\frac{\\text{shear stress}}{\\text{shear strain}} = \\frac{\\tau}{\\gamma}<br />$$<br />Bulk modulus:<br />$$<br />K = -V \\frac{dP}{dV}<br />$$<br />$G$ measures rigidity to shear; $K$ measures incompressibility under uniform pressure."
+            ],
+            "guid": "Ki#QT-o84M",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statemechanical_properties"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Poisson's ratio**  <br />What is Poisson's ratio and how is it calculated?",
+                "Poisson's ratio $\\nu$ gives the ratio of lateral contraction to longitudinal extension under strain:<br />$$<br />\\nu = -\\frac{\\text{lateral strain}}{\\text{longitudinal strain}}<br />$$"
+            ],
+            "guid": "c6h%I.ZVvw",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statemechanical_properties"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Microscopic picture of elasticity**  <br />How does elasticity arise from atomic interactions in a solid?",
+                "Elasticity arises from the interatomic potential between atoms. When a solid is deformed, atoms are displaced from equilibrium positions, and restoring forces arise due to the curvature of the potential well (modeled as springs for small displacements)."
+            ],
+            "guid": "I0:bqCKm{1",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_stateatomicelastic"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Interatomic force constant**  <br />What is the interatomic force constant, and how is it mathematically defined?",
+                "The interatomic force constant $\\alpha$ characterizes the stiffness of the bond between atoms:<br />$$<br />\\alpha = \\left. \\frac{d^2 U}{dr^2} \\right|_{r=r_0}<br />$$<br />where $U(r)$ is the interatomic potential and $r_0$ is the equilibrium distance."
+            ],
+            "guid": "rE(_?n$rR{",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_stateatomicelastic"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Shear angle and yield stress**  <br />What is the shear angle, and what does yield stress represent?",
+                "Shear angle $\\gamma$ quantifies the angular deformation under shear.  <br />Yield stress is the maximum stress a material can withstand before it undergoes permanent (plastic) deformation."
+            ],
+            "guid": "GV~-<4hgDP",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statemechanical_properties"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Point defects**  <br />Name and describe three types of point defects in crystals.",
+                "- **Vacancy:** A missing atom from a lattice site.  <br />- **Interstitial:** An extra atom positioned at a non-lattice site.  <br />- **Substitutional:** A foreign atom replaces a host atom at a lattice site."
+            ],
+            "guid": "Lm18m{YnL]",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statedefects"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Interatomic potential series expansion**  <br />How do you expand the interatomic potential around the equilibrium position, and what is the significance of the terms?",
+                "Expand $U(r)$ about $r_0$:<br />$$<br />U(r) = U(r_0) + \\frac{1}{2} \\alpha (r - r_0)^2 + \\frac{1}{6} \\beta (r - r_0)^3 + \\ldots<br />$$<br />$\\alpha$ is the harmonic term (spring constant). Higher-order terms represent anharmonic effects (important for thermal expansion and phonon interactions)."
+            ],
+            "guid": "Hg^Cx>JIkb",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_stateatomicvibrations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Harmonic oscillator**  <br />Write the equation of motion for a classical harmonic oscillator and its general solution.",
+                "Equation of motion:<br />$$<br />m \\frac{d^2 x}{dt^2} + kx = 0<br />$$<br />General solution:<br />$$<br />x(t) = A \\cos(\\omega t + \\phi)<br />$$<br />where $\\omega = \\sqrt{\\frac{k}{m}}$."
+            ],
+            "guid": "qpB5j>Wo><",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_stateoscillations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Equipartition theorem**  <br />State the equipartition theorem and apply it to a 1D harmonic oscillator.",
+                "Each quadratic degree of freedom contributes $\\frac{1}{2} k_B T$ to the average energy.  <br />A 1D harmonic oscillator has two quadratic degrees (kinetic and potential), so average energy is $k_B T$."
+            ],
+            "guid": "Q[ckmi{0$/",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statethermodynamics"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Infinite 1D chain**  <br />Write the equation of motion for an atom in an infinite 1D monatomic chain and state the form of its plane wave solution.",
+                "Equation of motion:<br />$$<br />m \\frac{d^2 u_n}{dt^2} = \\alpha (u_{n+1} + u_{n-1} - 2u_n)<br />$$<br />Plane wave solution:<br />$$<br />u_n(t) = u_0 e^{i(k n a - \\omega t)}<br />$$"
+            ],
+            "guid": "N.UOW>*1`}",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statephononsdispersion"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Dispersion relation for 1D chain**  <br />Derive the dispersion relation for a 1D monatomic chain.",
+                "Substitute the plane wave solution into the equation of motion:<br />$$<br />\\omega(k) = 2\\sqrt{\\frac{\\alpha}{m}} \\left| \\sin\\left( \\frac{ka}{2} \\right) \\right|<br />$$"
+            ],
+            "guid": "G1<7<dV3v^",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statephononsdispersion"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Dispersion relation**  <br />What does the dispersion relation $\\omega(k)$ represent physically?",
+                "It relates the frequency of a wave to its wavevector, describing how different wavelengths propagate in the medium."
+            ],
+            "guid": "y_O~S},K:0",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statewaves"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Phase and group velocity**  <br />Define phase velocity and group velocity in terms of $\\omega$ and $k$.",
+                "Phase velocity:<br />$$<br />v_p = \\frac{\\omega}{k}<br />$$<br />Group velocity:<br />$$<br />v_g = \\frac{d\\omega}{dk}<br />$$"
+            ],
+            "guid": "OxZFjok:h#",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statewaves"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Brillouin zone**  <br />What is a Brillouin zone and how does it relate to the dispersion relation in a 1D chain?",
+                "A Brillouin zone is the fundamental region of wavevector space due to the lattice periodicity; the dispersion relation is periodic in $k$ with period $2\\pi/a$, and is typically plotted within the first Brillouin zone ($-\\pi/a$ to $\\pi/a$)."
+            ],
+            "guid": "g1HA:JDsCV",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statebrillouin"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Two atoms per unit cell: setup**  <br />How do you set up the equations of motion for a 1D diatomic chain (two atoms per unit cell)?",
+                "Write coupled equations for displacements $u_n$ (mass $m_1$) and $v_n$ (mass $m_2$), leading to a $2 \\times 2$ coefficient matrix; setting its determinant to zero gives allowed frequencies $\\omega$."
+            ],
+            "guid": "m|-+TBLDbG",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statetwo_atom"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Optical and acoustic branches**  <br />What is the difference between acoustic and optical branches in the phonon dispersion relation?",
+                "- **Acoustic branch:** Atoms move in phase; $\\omega \\to 0$ as $k \\to 0$ (sound waves).<br />- **Optical branch:** Atoms move out of phase; $\\omega$ remains finite at $k = 0$ (optical phonons)."
+            ],
+            "guid": "P^@HG]L9LC",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statephonons"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Phonons and dispersion**  <br />What is a phonon, and how does the phonon dispersion relation depend on $k$?",
+                "A phonon is a quantized mode of lattice vibrations, characterized by wavevector $k$ and frequency $\\omega(k)$ given by the dispersion relation."
+            ],
+            "guid": "ccoA+t`D(]",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statephonons"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Periodic boundary conditions**  <br />What is the effect of periodic boundary conditions on allowed $k$ values in a 1D lattice?",
+                "Periodic boundary conditions make $k$ discrete:<br />$$<br />k = \\frac{2\\pi n}{Na}<br />$$<br />where $N$ is the number of unit cells, $a$ is the lattice constant."
+            ],
+            "guid": "K)^yDzTgaM",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statephonons"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Phonon branches in 3D**  <br />How many phonon branches are there in a 3D lattice, and how are they classified?",
+                "For $s$ atoms per unit cell, there are $3s$ branches: 3 acoustic (1 longitudinal, 2 transverse) and $3s-3$ optical branches."
+            ],
+            "guid": "Ei;,!Z8Yc.",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statephononsdimensions"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Dispersion relation for NaCl**  <br />Why does NaCl have both optical and acoustic phonon branches, and what is special about its optical phonons?",
+                "NaCl has two atoms per unit cell (Na and Cl), leading to both acoustic and optical branches. Optical phonons involve opposite motion of positive and negative ions, making them active in infrared absorption."
+            ],
+            "guid": "uL3JL(rs90",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statephononsNaCl"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Sound velocity and elastic moduli**  <br />How are the longitudinal and transverse sound velocities related to the elastic moduli and density?",
+                "Longitudinal velocity:<br />$$<br />v_l = \\sqrt{\\frac{K + \\frac{4}{3}G}{\\rho}}<br />$$<br />Transverse velocity:<br />$$<br />v_t = \\sqrt{\\frac{G}{\\rho}}<br />$$<br />where $K$ is bulk modulus, $G$ is shear modulus, $\\rho$ is density."
+            ],
+            "guid": "A,y^(v,2/n",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statesoundmoduli"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Spectroscopic techniques for phonons**  <br />Briefly describe how IR spectroscopy, Raman spectroscopy, and inelastic neutron scattering probe lattice vibrations.",
+                "- **IR spectroscopy:** Absorption of IR photons excites optical phonons (requires change in dipole moment).<br />- **Raman spectroscopy:** Inelastic scattering of light excites/absorbs phonons (requires change in polarizability).<br />- **Inelastic neutron scattering:** Neutrons exchange energy and momentum with phonons, directly probing phonon dispersion."
+            ],
+            "guid": "pgWhC#fNp)",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statespectroscopy"
             ]
         }
     ],
