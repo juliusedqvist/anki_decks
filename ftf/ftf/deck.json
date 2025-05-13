@@ -1,0 +1,1058 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "978586fa-2149-11f0-949b-90e8680fb0a5",
+    "deck_config_uuid": "57e10086-2146-11f0-949b-90e8680fb0a5",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "answerAction": 0,
+            "autoplay": true,
+            "buryInterdayLearning": false,
+            "crowdanki_uuid": "57e10086-2146-11f0-949b-90e8680fb0a5",
+            "desiredRetention": 0.9,
+            "dyn": false,
+            "easyDaysPercentages": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "fsrsParams5": [],
+            "fsrsWeights": [],
+            "ignoreRevlogsBeforeDate": "",
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 1,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Default",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    0
+                ],
+                "order": 1,
+                "perDay": 5
+            },
+            "newGatherPriority": 0,
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "newSortOrder": 0,
+            "questionAction": 0,
+            "reminder": {
+                "enabled": true,
+                "time": [
+                    8,
+                    0
+                ]
+            },
+            "replayq": true,
+            "rescheduleFsrsCards": false,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "perDay": 99
+            },
+            "reviewOrder": 0,
+            "secondsToShowAnswer": 0.0,
+            "secondsToShowQuestion": 0.0,
+            "sm2Retention": 0.9,
+            "stopTimerOnAnswer": false,
+            "timer": 0,
+            "waitForAudio": true,
+            "weightSearch": ""
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 0,
+    "extendRev": 0,
+    "media_files": [
+        "_auto-render.js",
+        "_highlight.css",
+        "_highlight.js",
+        "_katex.css",
+        "_katex.min.js",
+        "_markdown-it-mark.js",
+        "_markdown-it.min.js",
+        "_mhchem.js",
+        "_style.css",
+        "_user_style.css"
+    ],
+    "name": "ftf",
+    "newLimit": null,
+    "newLimitToday": null,
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "css": "/* To customize styles for this note type, please edit the '_user_style.css'\n * file in your collection media folder.\n * \n * To find it, please refer to: https://docs.ankiweb.net/files.html#file-locations */\n\n@import url(_style.css);\n@import url(_user_style.css);\n",
+            "flds": [
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "id": 562287664888119929,
+                    "name": "Front",
+                    "ord": 0,
+                    "plainText": false,
+                    "preventDeletion": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false,
+                    "tag": null
+                },
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "id": -6352188333252181906,
+                    "name": "Back",
+                    "ord": 1,
+                    "plainText": false,
+                    "preventDeletion": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false,
+                    "tag": null
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "KaTeX and Markdown Basic (Color)",
+            "originalStockKind": 1,
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tmpls": [
+                {
+                    "afmt": "<div id=\"front\" class=\"field\">\n  <pre>{{Front}}</pre>\n</div>\n\n<hr id=answer>\n\n<div id=\"back\" class=\"field\">\n  <pre>{{Back}}</pre>\n</div>\n\n<!-- Anki-KaTeX-Markdown -->\n\n<script>\n  var fields = [...document.querySelectorAll(\".field\")];\n  var getResources = [\n    getCSS(\"_katex.css\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css\"),\n    getCSS(\"_highlight.css\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css\"),\n    getScript(\"_highlight.js\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js\"),\n    getScript(\"_katex.min.js\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js\"),\n    getScript(\"_auto-render.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/auto-render-cdn.js\"),\n    getScript(\"_markdown-it.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js\"),\n    getScript(\"_markdown-it-mark.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/_markdown-it-mark.js\")\n  ];\n  Promise.all(getResources).then(() => getScript(\"_mhchem.js\", \"https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js\")).then(render).catch(show);\n\n\n  function getScript(path, altURL) {\n    return new Promise((resolve, reject) => {\n      let script = document.createElement(\"script\");\n      script.onload = resolve;\n      script.onerror = function () {\n        let script_online = document.createElement(\"script\");\n        script_online.onload = resolve;\n        script_online.onerror = reject;\n        script_online.src = altURL;\n        document.head.appendChild(script_online);\n      };\n      script.src = path;\n      document.head.appendChild(script);\n    });\n  }\n\n  function getCSS(path, altURL) {\n    return new Promise((resolve, reject) => {\n      var css = document.createElement(\"link\");\n      css.setAttribute(\"rel\", \"stylesheet\");\n      css.type = \"text/css\";\n      css.onload = resolve;\n      css.onerror = function () {\n        var css_online = document.createElement(\"link\");\n        css_online.setAttribute(\"rel\", \"stylesheet\");\n        css_online.type = \"text/css\";\n        css_online.onload = resolve;\n        css_online.onerror = reject;\n        css_online.href = altURL;\n        document.head.appendChild(css_online);\n      };\n      css.href = path;\n      document.head.appendChild(css);\n    });\n  }\n\n  function render() {\n    fields.forEach((element) => {\n      renderMath(element.id);\n      markdown(element.id);\n    });\n    show();\n  }\n\n  function show() {\n    fields.forEach((element) => {\n      document.getElementById(element.id).style.visibility = \"visible\";\n    });\n  }\n\n  function renderMath(ID) {\n    let text = document.getElementById(ID).innerHTML;\n    text = replaceInString(text);\n    text = text.replaceAll(\"\\\\$\", \"⛳\");\n    text = text.replaceAll(\"\\\\:\", \"🉐\");\n    document.getElementById(ID).innerHTML = text;\n    renderMathInElement(document.getElementById(ID), {\n      delimiters: [\n        { left: \"$$\", right: \"$$\", display: true },\n        { left: \"$\", right: \"$\", display: false },\n      ],\n      throwOnError: false,\n    });\n  }\n\n  function markdown(ID) {\n    let md = new markdownit({\n      typographer: true, html: true, highlight: function (str, lang) {\n        if (lang && hljs.getLanguage(lang)) {\n          try {\n            return hljs.highlight(str, { language: lang }).value;\n          } catch (__) { }\n        }\n\n        return \"\"; // use external default escaping\n      },\n    }).use(markdownItMark);\n    let text = replaceHTMLElementsInString(document.getElementById(ID).innerHTML);\n    text = md.render(text);\n    text = restoreHTMLElementsInString(text);\n    text = text.replaceAll(\"⛳\", \"$\");\n    text = text.replaceAll(\"🉐\", \":\");\n    document.getElementById(ID).innerHTML = text.replace(/&lt;\\/span&gt;/gi, \"\\\\\");\n  }\n  function replaceInString(str) {\n    str = str.replace(/<[\\/]?pre[^>]*>/gi, \"\");\n    str = str.replace(/<br\\s*[\\/]?[^>]*>/gi, \"\\n\");\n    str = str.replace(/<div[^>]*>/gi, \"\\n\");\n    // Thanks Graham A!\n    str = str.replace(/<[\\/]?span[^>]*>/gi, \"\");\n    str = str.replace(/<\\/div[^>]*>/g, \"\\n\");\n    return replaceHTMLElementsInString(str);\n  }\n\n  replacementElements = [\n    { from: \"\\\\<\", to: \"➿\", is_plaintext: true },\n    { from: \"\\\\>\", to: \"➰\", is_plaintext: true },\n    { from: \"&amp;\", to: \"&\" },\n    { from: \"&nbsp;\", to: \" \" },\n    { from: \"&tab;\", to: \"\t\" },\n  ];\n\n  restoreElements = [\n    { from: \"➿\", to: \"<\", is_plaintext: true },\n    { from: \"➰\", to: \">\", is_plaintext: true },\n    { from: \"&amp;\", to: \"&\", is_plaintext: true },\n    { from: \"&amp;lt;\", to: \"&lt;\", is_plaintext: true },\n    { from: \"&amp;gt;\", to: \"&gt;\", is_plaintext: true },\n  ];\n\n  function replaceHTMLElementsInString(str) {\n    for (let i = 0; i < replacementElements.length; i++) {\n      if (replacementElements[i].is_plaintext) {\n        str = str.replaceAll(replacementElements[i].from, replacementElements[i].to);\n      } else {\n        str = str.replace(new RegExp(replacementElements[i].from, \"gi\"), replacementElements[i].to);\n      }\n    }\n    return str;\n  }\n\n  function restoreHTMLElementsInString(str) {\n    for (let i = 0; i < restoreElements.length; i++) {\n      str = str.replace(new RegExp(restoreElements[i].from, \"gi\"), restoreElements[i].to);\n    }\n    return str;\n  }\n</script>\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "id": 4656602492711896623,
+                    "name": "KaTeX and Markdown Basic (Color)",
+                    "ord": 0,
+                    "qfmt": "<div id=\"front\" class=\"field\">\n  <pre>{{Front}}</pre>\n</div>\n\n<!-- Anki-KaTeX-Markdown -->\n\n<script>\n  var fields = [...document.querySelectorAll(\".field\")];\n  var getResources = [\n    getCSS(\"_katex.css\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css\"),\n    getCSS(\"_highlight.css\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css\"),\n    getScript(\"_highlight.js\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js\"),\n    getScript(\"_katex.min.js\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js\"),\n    getScript(\"_auto-render.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/auto-render-cdn.js\"),\n    getScript(\"_markdown-it.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js\"),\n    getScript(\"_markdown-it-mark.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/_markdown-it-mark.js\")\n  ];\n  Promise.all(getResources).then(() => getScript(\"_mhchem.js\", \"https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js\")).then(render).catch(show);\n\n\n  function getScript(path, altURL) {\n    return new Promise((resolve, reject) => {\n      let script = document.createElement(\"script\");\n      script.onload = resolve;\n      script.onerror = function () {\n        let script_online = document.createElement(\"script\");\n        script_online.onload = resolve;\n        script_online.onerror = reject;\n        script_online.src = altURL;\n        document.head.appendChild(script_online);\n      };\n      script.src = path;\n      document.head.appendChild(script);\n    });\n  }\n\n  function getCSS(path, altURL) {\n    return new Promise((resolve, reject) => {\n      var css = document.createElement(\"link\");\n      css.setAttribute(\"rel\", \"stylesheet\");\n      css.type = \"text/css\";\n      css.onload = resolve;\n      css.onerror = function () {\n        var css_online = document.createElement(\"link\");\n        css_online.setAttribute(\"rel\", \"stylesheet\");\n        css_online.type = \"text/css\";\n        css_online.onload = resolve;\n        css_online.onerror = reject;\n        css_online.href = altURL;\n        document.head.appendChild(css_online);\n      };\n      css.href = path;\n      document.head.appendChild(css);\n    });\n  }\n\n  function render() {\n    fields.forEach((element) => {\n      renderMath(element.id);\n      markdown(element.id);\n    });\n    show();\n  }\n\n  function show() {\n    fields.forEach((element) => {\n      document.getElementById(element.id).style.visibility = \"visible\";\n    });\n  }\n\n  function renderMath(ID) {\n    let text = document.getElementById(ID).innerHTML;\n    text = replaceInString(text);\n    text = text.replaceAll(\"\\\\$\", \"⛳\");\n    text = text.replaceAll(\"\\\\:\", \"🉐\");\n    document.getElementById(ID).innerHTML = text;\n    renderMathInElement(document.getElementById(ID), {\n      delimiters: [\n        { left: \"$$\", right: \"$$\", display: true },\n        { left: \"$\", right: \"$\", display: false },\n      ],\n      throwOnError: false,\n    });\n  }\n\n  function markdown(ID) {\n    let md = new markdownit({\n      typographer: true, html: true, highlight: function (str, lang) {\n        if (lang && hljs.getLanguage(lang)) {\n          try {\n            return hljs.highlight(str, { language: lang }).value;\n          } catch (__) { }\n        }\n\n        return \"\"; // use external default escaping\n      },\n    }).use(markdownItMark);\n    let text = replaceHTMLElementsInString(document.getElementById(ID).innerHTML);\n    text = md.render(text);\n    text = restoreHTMLElementsInString(text);\n    text = text.replaceAll(\"⛳\", \"$\");\n    text = text.replaceAll(\"🉐\", \":\");\n    document.getElementById(ID).innerHTML = text.replace(/&lt;\\/span&gt;/gi, \"\\\\\");\n  }\n  function replaceInString(str) {\n    str = str.replace(/<[\\/]?pre[^>]*>/gi, \"\");\n    str = str.replace(/<br\\s*[\\/]?[^>]*>/gi, \"\\n\");\n    str = str.replace(/<div[^>]*>/gi, \"\\n\");\n    // Thanks Graham A!\n    str = str.replace(/<[\\/]?span[^>]*>/gi, \"\");\n    str = str.replace(/<\\/div[^>]*>/g, \"\\n\");\n    return replaceHTMLElementsInString(str);\n  }\n\n  replacementElements = [\n    { from: \"\\\\<\", to: \"➿\", is_plaintext: true },\n    { from: \"\\\\>\", to: \"➰\", is_plaintext: true },\n    { from: \"&amp;\", to: \"&\" },\n    { from: \"&nbsp;\", to: \" \" },\n    { from: \"&tab;\", to: \"\t\" },\n  ];\n\n  restoreElements = [\n    { from: \"➿\", to: \"<\", is_plaintext: true },\n    { from: \"➰\", to: \">\", is_plaintext: true },\n    { from: \"&amp;\", to: \"&\", is_plaintext: true },\n    { from: \"&amp;lt;\", to: \"&lt;\", is_plaintext: true },\n    { from: \"&amp;gt;\", to: \"&gt;\", is_plaintext: true },\n  ];\n\n  function replaceHTMLElementsInString(str) {\n    for (let i = 0; i < replacementElements.length; i++) {\n      if (replacementElements[i].is_plaintext) {\n        str = str.replaceAll(replacementElements[i].from, replacementElements[i].to);\n      } else {\n        str = str.replace(new RegExp(replacementElements[i].from, \"gi\"), replacementElements[i].to);\n      }\n    }\n    return str;\n  }\n\n  function restoreHTMLElementsInString(str) {\n    for (let i = 0; i < restoreElements.length; i++) {\n      str = str.replace(new RegExp(restoreElements[i].from, \"gi\"), restoreElements[i].to);\n    }\n    return str;\n  }\n</script>\n"
+                }
+            ],
+            "type": 0
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Crystallography**<br />What is a lattice in the context of crystallography?",
+                "A lattice is a set of regularly spaced points where each point's position is defined as a linear combination of generating vectors with integer coefficients. In 2D, this is written as:<br><br>$<br>\\vec{R} = n\\vec{a}_1 + m\\vec{a}_2<br>$<br><br>where $n, m \\in \\mathbb{Z}$ and $\\vec{a}_1$, $\\vec{a}_2$ are the generating vectors."
+            ],
+            "guid": "j%cNM&,$`v",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "tags"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Crystallography**<br />What is a Bravais lattice and how many types exist in 2D and 3D?",
+                "A Bravais lattice is a lattice of points that has translational symmetry and fills space uniformly. There are 5 distinct Bravais lattices in two dimensions and 14 in three dimensions, based on symmetry differences."
+            ],
+            "guid": "x_.WvQjy>h",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "tags"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Crystallography**<br />What is a Wigner–Seitz cell?",
+                "A Wigner–Seitz cell is a special type of primitive unit cell defined as the region of space that is closer to a given lattice point than to any other. It uniquely partitions space based on proximity to lattice points."
+            ],
+            "guid": "g~3[;|!C-G",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "tags"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Crystallography**<br />What is a basis in crystallography, and how does it relate to a lattice?",
+                "A basis is the building block placed on each lattice point to create the actual crystal structure. It can consist of one atom, several atoms, or even complex molecules like proteins. When a basis is associated with every point of a Bravais lattice, the result is a real crystal structure. The combination of lattice and basis determines the full atomic arrangement in the crystal."
+            ],
+            "guid": "wZLXs($j~H",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "tags"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Crystallography**<br />Define a primitive unit cell and how it relates to the Bravais lattice.",
+                "A primitive unit cell is the smallest volume that, when translated through all the vectors of the Bravais lattice, fills space without overlap or voids. It contains exactly one lattice point."
+            ],
+            "guid": "uWi)^WafS",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "tags"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Crystallography**<br />What is the simple cubic (sc) structure and what are its key properties?",
+                "The simple cubic (sc) structure places atoms at each corner of a cube. It is the most basic 3D crystal structure but is uncommon in elemental solids due to its low packing efficiency.<br><br>Key properties:<br>- **Atoms per unit cell**: 1 (8 corners × $\\frac{1}{8}$ each)<br>- **Coordination number**: 6<br>- **Packing density**: <br>$$<br>\\eta = \\frac{\\pi}{6} \\approx 0.52<br>$$<br>- **Void space**: ~48%<br>- **Examples**: Polonium (rare example)<br><br>This openness makes it less favorable for metals, which tend to prefer more closely packed arrangements."
+            ],
+            "guid": "L*RY4e.-g&",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "tags"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Crystallography**<br />What is the body-centered cubic (bcc) structure and what are its key properties?",
+                "The body-centered cubic (bcc) structure has atoms at each corner of the cube and one atom in the center.<br><br>Key properties:<br>- **Atoms per unit cell**: 2 (8 corners × $\\frac{1}{8}$ + 1 center atom)<br>- **Coordination number**: 8<br>- **Packing density**: <br>$$<br>\\eta = \\frac{\\sqrt{3} \\pi}{8} \\approx 0.68<br>$$<br>- **Void space**: ~32%<br>- **Examples**: Iron (at room temp), Chromium, Tungsten<br><br>It is more densely packed than the simple cubic but less so than fcc. Often forms in metals where directional bonding is not crucial."
+            ],
+            "guid": "JR0deGl)%x",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "tags"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Crystallography**<br />What is the face-centered cubic (fcc) structure and what are its key properties?",
+                "The face-centered cubic (fcc) structure places atoms at each corner and at the center of each face of the cube.<br><br>Key properties:<br>- **Atoms per unit cell**: 4 (8 corners × $\\frac{1}{8}$ + 6 faces × $\\frac{1}{2}$)<br>- **Coordination number**: 12<br>- **Packing density**: <br>$$<br>\\eta = \\frac{\\pi}{3\\sqrt{2}} \\approx 0.74<br>$$<br>- **Void space**: ~26%<br>- **Examples**: Aluminum, Copper, Gold, Silver<br><br>It is the most efficient packing for equal-sized spheres in 3D, making it common for ductile, malleable metals."
+            ],
+            "guid": "cW*dwudGQ.",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "tags"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Crystallography**<br />What are close-packed structures in metals, and how do hcp and fcc differ?",
+                "Close-packed structures are arrangements where atoms (treated as spheres) are packed as densely as possible. In 3D, there are two main types:<br><br>- **Hexagonal Close-Packed (hcp)**: ABABAB... stacking<br>- **Face-Centered Cubic (fcc)**: ABCABCABC... stacking<br><br>Key properties (both fcc and hcp):<br>- **Packing density**: <br>$$<br>\\eta = \\frac{\\pi}{3\\sqrt{2}} \\approx 0.74<br>$$<br>- **Coordination number**: 12 (maximum possible)<br>- **fcc**: 24 elements crystallize in this form<br>- **hcp**: 36 elements crystallize in this form<br><br>Despite their high packing efficiency, not all metals adopt these structures. Reasons include:<br>- **bcc** (less packed) has closer second-nearest neighbors<br>- **Bonding** in transition metals involves localized and directional d-electrons, affecting preferred structures<br>- **Ionic solids** can also be viewed as close-packed, treating ions as hard spheres"
+            ],
+            "guid": "qRwNMU;IqV",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "tags"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**X-ray Diffraction**<br />What is the primary method used to determine crystal structures, and why is it important?",
+                "The primary method used to determine crystal structures is **X-ray diffraction**. It is essential not only in solid-state physics but also in structural biology (e.g., protein crystallography). It enables scientists to deduce atomic arrangements in crystals by analyzing the diffraction pattern of X-rays interacting with the crystal lattice."
+            ],
+            "guid": "B-k+hk&g^2",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "tags"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Bragg Condition**<br />What is the Bragg condition for constructive interference in X-ray diffraction?",
+                "The Bragg condition for constructive interference is:<br /><br />$$<br />2d \\sin\\theta = n\\lambda<br />$$<br /><br />Where:<br />- $d$ = spacing between atomic planes<br />- $\\theta$ = angle of incidence (and reflection)<br />- $\\lambda$ = X-ray wavelength<br />- $n$ = integer (order of reflection)<br /><br />This condition ensures the path difference between X-rays reflected from successive planes equals an integer multiple of the wavelength."
+            ],
+            "guid": "pe9SO5xLO<",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "tags"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Bragg Reflection**<br />What physical implications arise from the Bragg condition being satisfied?",
+                "If the Bragg condition is satisfied, constructive interference occurs for X-rays reflected from many crystal layers, leading to **sharp diffraction peaks**. This is similar to light diffracting through an optical grating. <br /><br />Since $2d \\sin\\theta = n\\lambda$, the condition also limits the **maximum usable wavelength** for resolving crystal structures."
+            ],
+            "guid": "JeJa!dG/kw",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "tags"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Lattice Planes**<br />What are lattice planes in a crystal, and why are they important in X-ray diffraction?",
+                "**Lattice planes** are imaginary, equally spaced planes that pass through points in a crystal lattice. They represent planes of atoms and are critical in **X-ray diffraction** because X-rays reflect off these planes. The spacing between these planes determines the diffraction angles through **Bragg’s law**, allowing structural information to be extracted from diffraction patterns."
+            ],
+            "guid": "tqKB@f4>gi",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "tags"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Miller Indices**<br />What are Miller indices and what do they represent?",
+                "**Miller indices (hkl)** are a set of three integers that describe the orientation of lattice planes in a crystal. They are derived from the **reciprocals of the intercepts** that a plane makes with the crystal axes. Miller indices help label and differentiate lattice planes and are essential in interpreting diffraction patterns."
+            ],
+            "guid": "wO9G[Kh#S%",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "tags"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Miller Indices**<br />How do you calculate Miller indices for a crystal plane?",
+                "To calculate **Miller indices (hkl)**:<br /><br />1. Determine the intercepts of the plane with the crystallographic axes in terms of lattice constants (e.g., $a$, $b$, $c$).<br />2. Take the **reciprocals** of these intercepts.<br />3. **Clear fractions** by multiplying all reciprocals by the least common multiple.<br />4. Resulting integers are the **Miller indices** $(h, k, l)$.<br /><br />Example:  <br />If a plane intercepts the axes at $(2a, 1b, \\infty)$,  <br />then the reciprocals are $(1/2, 1, 0)$ → multiply by 2 → Miller indices = $(1, 2, 0)$."
+            ],
+            "guid": "kCx|vG%AcT",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "tags"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Reciprocal Lattice**<br />What is the intuitive meaning of the reciprocal lattice?",
+                "The **reciprocal lattice** is a conceptual lattice in momentum (or wavevector) space, where each point represents a plane wave that fits the periodicity of the real-space lattice. It is crucial in analyzing wave phenomena like **X-ray diffraction** and **electron scattering**.<br /><br />Intuitively:<br />- Each point in the reciprocal lattice corresponds to a **set of planes** in the real lattice.<br />- The spacing in the reciprocal lattice is **inversely proportional** to the real-space lattice spacing.<br />- It provides a natural framework for understanding **Bragg diffraction**, where the condition for constructive interference corresponds to reciprocal lattice points intersecting a sphere in momentum space (Ewald construction)."
+            ],
+            "guid": "dk.9})65]b",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "tags"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Reciprocal Lattice**<br />What is the mathematical definition of the reciprocal lattice in 3D?",
+                "Given a Bravais lattice defined by the real-space vectors $\\vec{a}_1$, $\\vec{a}_2$, and $\\vec{a}_3$, the reciprocal lattice vectors $\\vec{b}_1$, $\\vec{b}_2$, and $\\vec{b}_3$ are defined as:<br /><br />$$<br />\\vec{b}_1 = 2\\pi \\frac{\\vec{a}_2 \\times \\vec{a}_3}{\\vec{a}_1 \\cdot (\\vec{a}_2 \\times \\vec{a}_3)}<br />$$<br /><br />$$<br />\\vec{b}_2 = 2\\pi \\frac{\\vec{a}_3 \\times \\vec{a}_1}{\\vec{a}_1 \\cdot (\\vec{a}_2 \\times \\vec{a}_3)}<br />$$<br /><br />$$<br />\\vec{b}_3 = 2\\pi \\frac{\\vec{a}_1 \\times \\vec{a}_2}{\\vec{a}_1 \\cdot (\\vec{a}_2 \\times \\vec{a}_3)}<br />$$<br /><br />Any point in the reciprocal lattice can be written as:<br />$$<br />\\vec{G} = h\\vec{b}_1 + k\\vec{b}_2 + l\\vec{b}_3<br />$$<br />with integers $h$, $k$, $l$.<br /><br />This framework is essential in describing periodicity in wavevector space and is the basis for interpreting diffraction patterns."
+            ],
+            "guid": "Q]XPm5YjN.",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "tags"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**X-ray Diffraction**<br />What is the Laue condition in X-ray diffraction, and why is it important?",
+                "The **Laue condition** describes the condition for constructive interference in X-ray diffraction. It states that constructive interference occurs when the difference between the incoming and scattered wave vectors equals a **reciprocal lattice vector**.<br /><br />Mathematically, the Laue condition is:<br /><br />$$<br />\\vec{k} - \\vec{k'} = \\vec{G}<br />$$<br /><br />where $\\vec{k}$ is the incoming wave vector, $\\vec{k'}$ is the scattered wave vector, and $\\vec{G}$ is a reciprocal lattice vector.<br /><br />This condition is central to X-ray diffraction because it determines when diffraction spots are observed, which are related to the structure of the crystal."
+            ],
+            "guid": "MwU&&l1&CO",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "condition",
+                "diffraction",
+                "Laue",
+                "X-ray"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**X-ray Diffraction**<br />What is the phase problem in X-ray diffraction and how is it overcome?",
+                "The **phase problem** in X-ray diffraction arises because the measured intensity of diffraction spots gives the magnitude of the Fourier coefficients of the electron density, but **not the phase**. This results in the loss of phase information during the measurement, making it difficult to directly reconstruct the electron density.<br /><br />To overcome this, a structural model is used to calculate the expected intensities, and these are compared to the experimental results. The model can then be refined until the calculated and experimental intensities match, providing a solution to the phase problem."
+            ],
+            "guid": "k5_:Q$,;NL",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "diffraction",
+                "phase",
+                "problem",
+                "X-ray"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**X-ray Diffraction**<br />How is the diffracted intensity in X-ray diffraction calculated for a crystal?",
+                "The diffracted intensity is proportional to the square of the Fourier coefficient of the electron concentration. This can be written as:<br /><br />$$<br />I(\\vec{k'}) \\propto |\\rho(\\vec{G})|^2<br />$$<br /><br />Where $\\rho(\\vec{G})$ is the Fourier coefficient corresponding to the reciprocal lattice vector $\\vec{G}$.<br /><br />The intensity can be computed by summing over all unit cells in the crystal, considering the periodicity of the lattice and the electron concentration. This includes contributions from the atomic form factors, which describe the scattering from individual atoms.<br /><br />This calculation allows the determination of the electron concentration and, ultimately, the crystal structure."
+            ],
+            "guid": "Q=]nvkp%Dl",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "calculation",
+                "diffraction",
+                "intensity",
+                "X-ray"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**X-ray Diffraction**<br />What is the **Ewald construction** and how is it used in X-ray diffraction?",
+                "The **Ewald construction** is a graphical method used to visualize and understand the diffraction condition in X-ray crystallography. It is based on the idea of the diffraction condition being related to the vector sum of the incident and scattered wave vectors.<br /><br />The key steps in the Ewald construction are:<br /><br />1. Represent the incident X-ray wave vector $\\vec{k}$ and the scattered wave vector $\\vec{k'}$ as vectors in reciprocal space.<br />2. The condition for diffraction is that the difference between these wave vectors must correspond to a reciprocal lattice vector $\\vec{G}$: <br />   $$<br />   \\vec{k} - \\vec{k'} = \\vec{G}<br />   $$ <br />3. The Ewald sphere construction visualizes this condition by drawing a sphere with a radius equal to the magnitude of the incident wave vector ($|\\vec{k}|$). <br />4. Diffraction occurs when the scattered wave vector $\\vec{k'}$ lies on the Ewald sphere, meaning that the difference between $\\vec{k}$ and $\\vec{k'}$ is a reciprocal lattice vector $\\vec{G}$.<br /><br />This graphical representation helps to understand the relationship between the incident and diffracted waves and the reciprocal lattice, providing a clear visualization of diffraction conditions in crystals."
+            ],
+            "guid": "iHTp{5F8C~",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "construction",
+                "diffraction",
+                "Ewald",
+                "X-ray"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Interatomic Potential**<br />What is a typical form of the interatomic potential between two atoms?",
+                "A simple form of the interatomic potential $V(r)$ as a function of distance $r$ is:<br /><br />$$<br />V(r) = -\\frac{A}{r^n} + \\frac{B}{r^m}<br />$$<br /><br />where:<br />- First term: attractive force<br />- Second term: repulsive force<br />- $n, m > 0$, typically $m > n$<br /><br />Repulsion dominates at short distances, while attraction dominates at moderate distances."
+            ],
+            "guid": "E>!Z:*KZ[~",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "InteratomicPotential"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Ionic Bonding**<br />Describe the process of ionic bonding and the forces involved.",
+                "- Ionic bonding involves the transfer of electrons from an **electropositive atom** to an **electronegative atom**.<br />- Results in the formation of positive and negative ions.<br />- The **bonding force** is the **Coulomb attraction** between the oppositely charged ions:<br /><br />  $$<br />  F = \\frac{q_1 q_2}{4\\pi \\epsilon_0 r^2}<br />  $$<br /><br />- Examples include NaCl, where Na donates an electron to Cl."
+            ],
+            "guid": "p)$e{m?lBU",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "IonicBonding"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Madelung Constant**<br />What is the Madelung constant and its significance in ionic bonding?",
+                "- The **Madelung constant** $M$ accounts for the electrostatic interactions with all neighboring ions in a crystal lattice.<br />- Specific to the crystal structure.<br />- Enhances the **total Coulomb energy gain** beyond that of just one ion pair.<br />- For NaCl, $M \\approx 1.7476$.<br />- Appears in lattice energy formula:<br /><br />  $$<br />  E_\\text{lattice} = -M \\frac{e^2}{4\\pi \\epsilon_0 r}<br />  $$"
+            ],
+            "guid": "FwE(3H/;}f",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "IonicBonding",
+                "Madelung"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Quantum Effects in Ionic Bonding**<br />Why are quantum mechanics important even for ionic bonding?",
+                "- The **equilibrium interatomic distance** depends on quantum mechanical repulsion.<br />- The **repulsive potential** causes the potential minimum to lie slightly above the purely Coulombic prediction.<br />- Quantum mechanics is essential to calculate:<br />  - The equilibrium distance $a$.<br />  - The accurate cohesive energy.<br />- The **cohesive energy per atom** in ionic solids is typically several eV."
+            ],
+            "guid": "JmRr3B!Dsr",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "IonicBonding",
+                "Quantum"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Covalent Bonding**<br />What is covalent bonding and what are its key features?",
+                "- **Covalent bonding** involves **true sharing of electrons** between atoms.<br />- Found in elements with **half-filled outer shells** (e.g., carbon).<br />- Bonds are **highly directional** and **very stable**.<br />- **Cohesive energies** are typically several electron volts per atom.<br />- Examples: **Diamond, graphene, graphite, fullerenes, carbon nanotubes**."
+            ],
+            "guid": "p6Zyhu?35^",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "CovalentBonding"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Carbon Bonding**<br />How are covalent bonds formed in carbon-based solids like diamond and graphene?",
+                "- In **diamond**:<br />  - 2s + 3 × 2p orbitals mix to form **four sp³ hybrid orbitals**.<br />  - Arranged in **tetrahedral configuration**.<br /><br />- In **graphene/graphite**:<br />  - 2s + 2 × 2p orbitals form **three sp² hybrid orbitals** (planar, 120° apart).<br />  - Remaining p orbital is **perpendicular to plane**."
+            ],
+            "guid": "A|GhROy-}+",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Carbon",
+                "CovalentBonding"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Hydrogen Molecule Bonding**<br />How do we model the bonding in the hydrogen molecule?",
+                "- Start with **ground-state wavefunctions** of individual H atoms: $\\psi_A$, $\\psi_B$.<br />- Total wavefunction must be **antisymmetric** (Pauli principle).<br />- Two possibilities:<br />  - **Symmetric spatial part** + **antisymmetric spin part** (Singlet, spin 0).<br />  - **Antisymmetric spatial part** + **symmetric spin part** (Triplet, spin 1).<br /><br />- Bonding occurs when **electron density accumulates** between nuclei (singlet state)."
+            ],
+            "guid": "ll>U_tYKDs",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "CovalentBonding",
+                "Hydrogen"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Bonding vs Antibonding States**<br />What is the difference between bonding and antibonding in the hydrogen molecule?",
+                "- **Bonding (Singlet state)**:<br />  - Symmetric spatial wavefunction.<br />  - Opposite spins allow **charge accumulation** between nuclei.<br />  - Leads to **lower energy** (bond formation).<br /><br />- **Antibonding (Triplet state)**:<br />  - Antisymmetric spatial wavefunction.<br />  - Parallel spins **deplete electron density** between nuclei.<br />  - No bond formation, **higher energy**."
+            ],
+            "guid": "CHg(64?EWK",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "BondingStates",
+                "CovalentBonding"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Heitler–London Approximation**<br />What is the Heitler–London method for bonding in H₂?",
+                "- Form two-electron wavefunction from atomic H wavefunctions.<br />- Approximate molecular energy by:<br /><br />  $$<br />  E = \\langle \\Psi | H | \\Psi \\rangle<br />  $$<br /><br />- Result:<br />  - Singlet (bonding) state: lower energy with minimum at ~1.5 Bohr radii.<br />  - Triplet (antibonding) state: higher energy.<br />- Based on **variational principle**: approximate, but close to true ground-state energy."
+            ],
+            "guid": "M-@blOnvpP",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "CovalentBonding",
+                "HeitlerLondon"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Exchange Energy and Spin Coupling**<br />How does exchange energy relate to spin orientations?",
+                "- Energy depends on **relative spin directions** of electrons.<br />- Exchange energy $X$ determines spin preference:<br />  - $X < 0$: **Antiferromagnetic** (opposite spins favored, bonding state).<br />  - $X > 0$: **Ferromagnetic** (parallel spins favored).<br /><br />- In H₂, $X$ is **always negative** ⇒ favors singlet (antiparallel spins).<br />- Basis for understanding **magnetism** in solids later."
+            ],
+            "guid": "C+`Dk1rakU",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "CovalentBonding",
+                "Magnetism"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Metallic Bonding**<br />What characterizes metallic bonding in solids?",
+                "- **Valence electrons** are **delocalized** and free to move between ion cores.<br />- **Conduction electrons** are responsible for **electrical conductivity**.<br />- Metallic bonding is found where **removing outer electrons** doesn't cost too much energy.<br />- Energy gain comes mainly from **lowered kinetic energy** of delocalized electrons."
+            ],
+            "guid": "e%?||KEYaE",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "MetallicBonding"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Metallic Bonding: Energy Contributions**<br />What energy contributions lower the total energy in metallic bonding?",
+                "- **Kinetic Energy**:<br />  - Lower for delocalized electrons than for localized electrons.<br />  - Energy gain due to **lower curvature** of wavefunctions.<br />  <br />- **Potential Energy**:<br />  - Electrons experience an **attractive potential**.<br />  - Due to **Pauli exclusion principle** and **direct Coulomb repulsion**, electrons avoid each other."
+            ],
+            "guid": "hN496LYT^E",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "Energy",
+                "MetallicBonding"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Metallic Structures**<br />Why do metals prefer close-packed structures?",
+                "- **No directional bonding** in metals.<br />- **Close packing** maximizes:<br />  - Overlap of **valence orbitals**.<br />  - **Delocalization** and **kinetic energy gain**.<br />  - Number of **nearest neighbors**.<br />- Leads to stronger metallic bonding."
+            ],
+            "guid": "Hq#i_+31-Z",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "MetallicBonding",
+                "Structure"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Strength of Metallic Bonding**<br />How strong is metallic bonding compared to other types?",
+                "- Metallic bonding is generally **weaker** than **covalent** or **ionic** bonding.<br />- Typical bond strength: **a few electron volts per atom**.<br />- **Transition metals** show stronger bonding:<br />  - **s and p** electrons are delocalized (metallic).<br />  - **d electrons** form **localized covalent bonds** (mixed bonding)."
+            ],
+            "guid": "C]JqB[WUau",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "MetallicBonding",
+                "Strength"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Hydrogen Bonding**<br />What is hydrogen bonding and when does it occur?",
+                "- Hydrogen forms **one covalent bond** (one electron).<br />- When bonded to **highly electronegative atoms** (F, O), H becomes **partially positive**.<br />- Attracts **partial negative charges** in other molecules ⇒ **electrostatic bond**.<br />- **Weaker** than covalent bonds but can reach **hundreds of meV per atom**.<br />- Important in **ice** and **DNA double helix**."
+            ],
+            "guid": "I>_;{iQ_P{",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "HydrogenBonding"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Van der Waals Bonding**<br />What is van der Waals bonding?",
+                "- Arises from **quantum fluctuations** in the electron cloud ⇒ **fluctuating dipoles**.<br />- Dipoles **polarize neighboring atoms**, creating an **attractive interaction**.<br />- **Very weak bonding** (meV per atom).<br />- Present in **all solids** but dominant only in **noble gas solids**.<br />- **Pure van der Waals crystals** exist only at **very low temperatures**."
+            ],
+            "guid": "rJv)$K#B)=",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "VanDerWaalsBonding"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Bloch's Theorem**  <br />What is Bloch’s theorem and why is it important in solid state physics?",
+                "- In a **periodic potential** $V(\\mathbf{r}) = V(\\mathbf{r} + \\mathbf{R})$, solutions to Schrödinger's equation are:<br />  $$<br />  \\psi_{\\mathbf{k}}(\\mathbf{r}) = e^{i \\mathbf{k} \\cdot \\mathbf{r}} u_{\\mathbf{k}}(\\mathbf{r})<br />  $$<br />- Here, $u_{\\mathbf{k}}(\\mathbf{r})$ has the **same periodicity** as the lattice:<br />  $$<br />  u_{\\mathbf{k}}(\\mathbf{r}) = u_{\\mathbf{k}}(\\mathbf{r} + \\mathbf{R})<br />  $$<br />- Interpretation:<br />  - Electrons behave like **free particles** modulated by the periodic lattice.<br />  - Explains **band structures**, **crystal momentum**, and **energy gaps** in crystals."
+            ],
+            "guid": "c;6Ev$!k<C",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "BlochTheorem"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Brillouin Zones**  <br />What is a Brillouin zone?",
+                "- The **first Brillouin zone** is the set of points in reciprocal space that are **closer to the origin** than to any other reciprocal lattice point.<br />- Built using the **Wigner-Seitz method** in **reciprocal space**.<br />- It defines the **primitive cell** of the reciprocal lattice.<br />- Important for:<br />  - Classifying allowed $\\mathbf{k}$-vectors.<br />  - Understanding **electronic band structures** and **phonon spectra**."
+            ],
+            "guid": "i(9|u}M?-q",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "BrillouinZones"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**First vs Second Brillouin Zone**  <br />What are the first and second Brillouin zones?",
+                "- **First Brillouin Zone**:<br />  - Region of reciprocal space closest to the origin.<br />- **Second Brillouin Zone**:<br />  - Points that are farther than the first zone but closer to second-nearest reciprocal lattice points.<br />- Higher zones contain **equivalent information** because of the periodicity of reciprocal space."
+            ],
+            "guid": "HOj`9kC3ys",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "BrillouinZones",
+                "FirstSecond"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Constructing a Brillouin Zone**  <br />How do you calculate (construct) a Brillouin zone?",
+                "- **Step 1**: Find reciprocal lattice points $\\mathbf{G}$.<br />- **Step 2**: Draw vectors from the origin to each $\\mathbf{G}$.<br />- **Step 3**: Draw **perpendicular bisectors** of these vectors.<br />- **Step 4**: The region enclosed closest to the origin is the **first Brillouin zone**.<br /><br />- Reciprocal lattice vectors from real space vectors:<br />  $$<br />  \\mathbf{b}_1 = 2\\pi \\frac{\\mathbf{a}_2 \\times \\mathbf{a}_3}{\\mathbf{a}_1 \\cdot (\\mathbf{a}_2 \\times \\mathbf{a}_3)}<br />  $$<br />  (plus cyclic permutations for $\\mathbf{b}_2$ and $\\mathbf{b}_3$).<br /><br />- In 1D: simple intervals.<br />- In 2D: hexagonal or square shapes.<br />- In 3D: complex polyhedra like truncated octahedra (FCC)."
+            ],
+            "guid": "Rh%zDj-HM7",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "BrillouinZones",
+                "construction"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Structure Factor**  <br />What is the structure factor in crystallography?",
+                "The structure factor is a complex quantity that determines the amplitude and phase of waves scattered by atoms in a crystal. It influences diffraction intensities and is given by:  <br />$$<br />F(\\mathbf{G}) = \\sum_{j=1}^{N} f_j e^{i \\mathbf{G} \\cdot \\mathbf{r}_j}<br />$$"
+            ],
+            "guid": "L8NI943ZgD",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "basics",
+                "structure-factor"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Structure Factor Terms**  <br />What do $f_j$ and $\\mathbf{r}_j$ represent in the structure factor formula?",
+                "- $f_j$: Atomic scattering factor for the $j$-th atom (depends on atomic type and wavelength).  <br />- $\\mathbf{r}_j$: Position vector of the $j$-th atom in the unit cell."
+            ],
+            "guid": "faIFnYA9mZ",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "components",
+                "structure-factor"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Physical Meaning**  <br />What does the modulus squared of the structure factor $|F(\\mathbf{G})|^2$ represent?",
+                "It represents the **intensity** of the diffracted beam at the reciprocal lattice point $\\mathbf{G}$."
+            ],
+            "guid": "DF[Wksy>jc",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "interpretation",
+                "structure-factor"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Bragg and Structure Factor**  <br />How is the structure factor related to Bragg's law?",
+                "Bragg's law determines the possible directions of diffraction, while the structure factor determines the **intensity** and whether the reflection will actually occur (i.e., is visible)."
+            ],
+            "guid": "DNi9Y^VPU}",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "bragg",
+                "structure-factor"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Stress**  <br />What is the definition of stress in a solid, and how is it mathematically defined?",
+                "Stress is the internal force per unit area that arises within a material to balance an externally applied force. Mathematically,<br />$$<br />\\sigma = \\frac{F}{A}<br />$$<br />where $F$ is the applied force and $A$ is the cross-sectional area over which the force acts."
+            ],
+            "guid": "i>.pA*`WsQ",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statemechanical_properties"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Strain**  <br />How is strain defined in the context of solid-state physics, and is it a dimensionless quantity?",
+                "Strain quantifies the relative deformation of a material due to applied stress. For a change in length $\\Delta L$ from original length $L_0$,<br />$$<br />\\epsilon = \\frac{\\Delta L}{L_0}<br />$$<br />Strain is dimensionless."
+            ],
+            "guid": "cDN4K<aa^$",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statemechanical_properties"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Deformation**  <br />What is the difference between elastic and plastic deformation?",
+                "**Elastic deformation** is reversible; material returns to its original shape after the stress is removed.  <br />**Plastic deformation** is permanent; the material does not return to its original shape after stress is removed."
+            ],
+            "guid": "Nd}Ys{4VO?",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statemechanical_properties"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Young's modulus**  <br />What is Young's modulus, how is it defined mathematically, and what does it physically represent?",
+                "Young's modulus $E$ measures a material's stiffness under tensile or compressive stress.  <br />$$<br />E = \\frac{\\sigma}{\\epsilon}<br />$$<br />It represents the ratio of stress to strain in the elastic (linear) regime."
+            ],
+            "guid": "q;6gFOPVp1",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statemechanical_properties"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Shear modulus and bulk modulus**  <br />How are the shear modulus ($G$) and bulk modulus ($K$) defined?",
+                "Shear modulus:<br />$$<br />G = \\frac{\\text{shear stress}}{\\text{shear strain}} = \\frac{\\tau}{\\gamma}<br />$$<br />Bulk modulus:<br />$$<br />K = -V \\frac{dP}{dV}<br />$$<br />$G$ measures rigidity to shear; $K$ measures incompressibility under uniform pressure."
+            ],
+            "guid": "Ki#QT-o84M",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statemechanical_properties"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Poisson's ratio**  <br />What is Poisson's ratio and how is it calculated?",
+                "Poisson's ratio $\\nu$ gives the ratio of lateral contraction to longitudinal extension under strain:<br />$$<br />\\nu = -\\frac{\\text{lateral strain}}{\\text{longitudinal strain}}<br />$$"
+            ],
+            "guid": "c6h%I.ZVvw",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statemechanical_properties"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Microscopic picture of elasticity**  <br />How does elasticity arise from atomic interactions in a solid?",
+                "Elasticity arises from the interatomic potential between atoms. When a solid is deformed, atoms are displaced from equilibrium positions, and restoring forces arise due to the curvature of the potential well (modeled as springs for small displacements)."
+            ],
+            "guid": "I0:bqCKm{1",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_stateatomicelastic"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Interatomic force constant**  <br />What is the interatomic force constant, and how is it mathematically defined?",
+                "The interatomic force constant $\\alpha$ characterizes the stiffness of the bond between atoms:<br />$$<br />\\alpha = \\left. \\frac{d^2 U}{dr^2} \\right|_{r=r_0}<br />$$<br />where $U(r)$ is the interatomic potential and $r_0$ is the equilibrium distance."
+            ],
+            "guid": "rE(_?n$rR{",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_stateatomicelastic"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Shear angle and yield stress**  <br />What is the shear angle, and what does yield stress represent?",
+                "Shear angle $\\gamma$ quantifies the angular deformation under shear.  <br />Yield stress is the maximum stress a material can withstand before it undergoes permanent (plastic) deformation."
+            ],
+            "guid": "GV~-<4hgDP",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statemechanical_properties"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Point defects**  <br />Name and describe three types of point defects in crystals.",
+                "- **Vacancy:** A missing atom from a lattice site.  <br />- **Interstitial:** An extra atom positioned at a non-lattice site.  <br />- **Substitutional:** A foreign atom replaces a host atom at a lattice site."
+            ],
+            "guid": "Lm18m{YnL]",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statedefects"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Interatomic potential series expansion**  <br />How do you expand the interatomic potential around the equilibrium position, and what is the significance of the terms?",
+                "Expand $U(r)$ about $r_0$:<br />$$<br />U(r) = U(r_0) + \\frac{1}{2} \\alpha (r - r_0)^2 + \\frac{1}{6} \\beta (r - r_0)^3 + \\ldots<br />$$<br />$\\alpha$ is the harmonic term (spring constant). Higher-order terms represent anharmonic effects (important for thermal expansion and phonon interactions)."
+            ],
+            "guid": "Hg^Cx>JIkb",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_stateatomicvibrations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Harmonic oscillator**  <br />Write the equation of motion for a classical harmonic oscillator and its general solution.",
+                "Equation of motion:<br />$$<br />m \\frac{d^2 x}{dt^2} + kx = 0<br />$$<br />General solution:<br />$$<br />x(t) = A \\cos(\\omega t + \\phi)<br />$$<br />where $\\omega = \\sqrt{\\frac{k}{m}}$."
+            ],
+            "guid": "qpB5j>Wo><",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_stateoscillations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Equipartition theorem**  <br />State the equipartition theorem and apply it to a 1D harmonic oscillator.",
+                "Each quadratic degree of freedom contributes $\\frac{1}{2} k_B T$ to the average energy.  <br />A 1D harmonic oscillator has two quadratic degrees (kinetic and potential), so average energy is $k_B T$."
+            ],
+            "guid": "Q[ckmi{0$/",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statethermodynamics"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Infinite 1D chain**  <br />Write the equation of motion for an atom in an infinite 1D monatomic chain and state the form of its plane wave solution.",
+                "Equation of motion:<br />$$<br />m \\frac{d^2 u_n}{dt^2} = \\alpha (u_{n+1} + u_{n-1} - 2u_n)<br />$$<br />Plane wave solution:<br />$$<br />u_n(t) = u_0 e^{i(k n a - \\omega t)}<br />$$"
+            ],
+            "guid": "N.UOW>*1`}",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statephononsdispersion"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Dispersion relation for 1D chain**  <br />Derive the dispersion relation for a 1D monatomic chain.",
+                "Substitute the plane wave solution into the equation of motion:<br />$$<br />\\omega(k) = 2\\sqrt{\\frac{\\alpha}{m}} \\left| \\sin\\left( \\frac{ka}{2} \\right) \\right|<br />$$"
+            ],
+            "guid": "G1<7<dV3v^",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statephononsdispersion"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Dispersion relation**  <br />What does the dispersion relation $\\omega(k)$ represent physically?",
+                "It relates the frequency of a wave to its wavevector, describing how different wavelengths propagate in the medium."
+            ],
+            "guid": "y_O~S},K:0",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statewaves"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Phase and group velocity**  <br />Define phase velocity and group velocity in terms of $\\omega$ and $k$.",
+                "Phase velocity:<br />$$<br />v_p = \\frac{\\omega}{k}<br />$$<br />Group velocity:<br />$$<br />v_g = \\frac{d\\omega}{dk}<br />$$"
+            ],
+            "guid": "OxZFjok:h#",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statewaves"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Brillouin zone**  <br />What is a Brillouin zone and how does it relate to the dispersion relation in a 1D chain?",
+                "A Brillouin zone is the fundamental region of wavevector space due to the lattice periodicity; the dispersion relation is periodic in $k$ with period $2\\pi/a$, and is typically plotted within the first Brillouin zone ($-\\pi/a$ to $\\pi/a$)."
+            ],
+            "guid": "g1HA:JDsCV",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statebrillouin"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Two atoms per unit cell: setup**  <br />How do you set up the equations of motion for a 1D diatomic chain (two atoms per unit cell)?",
+                "Write coupled equations for displacements $u_n$ (mass $m_1$) and $v_n$ (mass $m_2$), leading to a $2 \\times 2$ coefficient matrix; setting its determinant to zero gives allowed frequencies $\\omega$."
+            ],
+            "guid": "m|-+TBLDbG",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statetwo_atom"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Optical and acoustic branches**  <br />What is the difference between acoustic and optical branches in the phonon dispersion relation?",
+                "- **Acoustic branch:** Atoms move in phase; $\\omega \\to 0$ as $k \\to 0$ (sound waves).<br />- **Optical branch:** Atoms move out of phase; $\\omega$ remains finite at $k = 0$ (optical phonons)."
+            ],
+            "guid": "P^@HG]L9LC",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statephonons"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Phonons and dispersion**  <br />What is a phonon, and how does the phonon dispersion relation depend on $k$?",
+                "A phonon is a quantized mode of lattice vibrations, characterized by wavevector $k$ and frequency $\\omega(k)$ given by the dispersion relation."
+            ],
+            "guid": "ccoA+t`D(]",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statephonons"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Periodic boundary conditions**  <br />What is the effect of periodic boundary conditions on allowed $k$ values in a 1D lattice?",
+                "Periodic boundary conditions make $k$ discrete:<br />$$<br />k = \\frac{2\\pi n}{Na}<br />$$<br />where $N$ is the number of unit cells, $a$ is the lattice constant."
+            ],
+            "guid": "K)^yDzTgaM",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statephonons"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Phonon branches in 3D**  <br />How many phonon branches are there in a 3D lattice, and how are they classified?",
+                "For $s$ atoms per unit cell, there are $3s$ branches: 3 acoustic (1 longitudinal, 2 transverse) and $3s-3$ optical branches."
+            ],
+            "guid": "Ei;,!Z8Yc.",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statephononsdimensions"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Dispersion relation for NaCl**  <br />Why does NaCl have both optical and acoustic phonon branches, and what is special about its optical phonons?",
+                "NaCl has two atoms per unit cell (Na and Cl), leading to both acoustic and optical branches. Optical phonons involve opposite motion of positive and negative ions, making them active in infrared absorption."
+            ],
+            "guid": "uL3JL(rs90",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statephononsNaCl"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Sound velocity and elastic moduli**  <br />How are the longitudinal and transverse sound velocities related to the elastic moduli and density?",
+                "Longitudinal velocity:<br />$$<br />v_l = \\sqrt{\\frac{K + \\frac{4}{3}G}{\\rho}}<br />$$<br />Transverse velocity:<br />$$<br />v_t = \\sqrt{\\frac{G}{\\rho}}<br />$$<br />where $K$ is bulk modulus, $G$ is shear modulus, $\\rho$ is density."
+            ],
+            "guid": "A,y^(v,2/n",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statesoundmoduli"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Spectroscopic techniques for phonons**  <br />Briefly describe how IR spectroscopy, Raman spectroscopy, and inelastic neutron scattering probe lattice vibrations.",
+                "- **IR spectroscopy:** Absorption of IR photons excites optical phonons (requires change in dipole moment).<br />- **Raman spectroscopy:** Inelastic scattering of light excites/absorbs phonons (requires change in polarizability).<br />- **Inelastic neutron scattering:** Neutrons exchange energy and momentum with phonons, directly probing phonon dispersion."
+            ],
+            "guid": "pgWhC#fNp)",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "solid_statespectroscopy"
+            ]
+        }
+    ],
+    "reviewLimit": null,
+    "reviewLimitToday": null
+}
