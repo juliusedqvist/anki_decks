@@ -100,7 +100,7 @@
         "_user_style.css"
     ],
     "name": "ftf",
-    "newLimit": null,
+    "newLimit": 10,
     "newLimitToday": null,
     "note_models": [
         {
@@ -1050,6 +1050,438 @@
             "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
             "tags": [
                 "solid_statespectroscopy"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Lattice Vibrations**  <br />What are lattice vibrations in crystalline solids and why do they occur?",
+                "Lattice vibrations are collective oscillations of atoms about their equilibrium positions in a crystal lattice. They occur because atoms are bound by interatomic forces that can be modeled as springs. When atoms are displaced from equilibrium, restoring forces act to bring them back, resulting in vibrational motion. These quantized vibrations are called phonons."
+            ],
+            "guid": "l^~JqJK~s=",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "approximation",
+                "harmonic",
+                "lattice",
+                "vibrations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Harmonic Approximation**  <br />What is the harmonic approximation in the context of lattice vibrations, and what is its mathematical basis?",
+                "The harmonic approximation assumes that the potential energy of atoms displaced from equilibrium can be approximated by a quadratic function (i.e., treating interatomic forces as linear springs). Mathematically, the potential energy for small displacements $u$ is:<br />$$<br />U \\approx \\frac{1}{2}K u^2<br />$$<br />where $K$ is the force constant. This leads to equations of motion that are linear and allows the use of normal modes to describe vibrations. The approximation neglects higher-order (anharmonic) terms."
+            ],
+            "guid": "w2N{}]s$Fz",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "approximation",
+                "harmonic",
+                "theory"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Physical Meaning of the Wave**  <br />What does the \"physical wave\" propagating through the crystal actually represent in the context of lattice vibrations?",
+                "The physical wave represents the collective, periodic motion of atoms: as one atom moves from its equilibrium position, it pulls/pushes its neighbors, creating a traveling disturbance through the lattice. This is not a wave of charge or mass, but a wave of atomic displacements. These displacement waves can be described mathematically as:<br />$$<br />u_n(t) = A e^{i(k n a - \\omega t)}<br />$$<br />where $u_n$ is the displacement of the $n$-th atom, $k$ is the wavevector, $\\omega$ is the angular frequency, and $a$ is the lattice spacing."
+            ],
+            "guid": "u]WoSB{~G#",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "lattice",
+                "meaning",
+                "physical",
+                "vibrations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Wavevector $k$ in Dispersion Relation**  <br />Explain in depth what the $k$ is in the dispersion relation, and what it physically and mathematically represents in lattice vibrations.",
+                "The wavevector $k$ characterizes the periodicity and direction of the vibrational wave in the lattice. Physically, $k$ determines the wavelength ($\\lambda = 2\\pi/|k|$) of the displacement wave. Mathematically, it's the spatial frequency in the solution $u_n(t) = A e^{i(k n a - \\omega t)}$, where $n$ is the site index and $a$ is the lattice constant. In reciprocal space, $k$ indexes the normal modes of vibration and is restricted to the first Brillouin zone due to the periodicity of the lattice."
+            ],
+            "guid": "o9,tf{19|>",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "dispersion",
+                "k",
+                "relation",
+                "vector"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Dispersion Relation and Reciprocal Lattice Vectors**  <br />Why are the dispersion relation and motion of atoms unaffected by adding integer multiples of the reciprocal lattice vector $G = 2\\pi/a$ to $k$?",
+                "Due to the discrete translation symmetry of the lattice, adding any integer multiple of the reciprocal lattice vector $G$ to $k$ leaves the physical displacement unchanged:<br />$$<br />e^{i[(k+G)na]} = e^{i(kna)} e^{i(2\\pi n)} = e^{i(kna)}<br />$$<br />since $e^{i(2\\pi n)} = 1$ for any integer $n$. Therefore, $k$ and $k+G$ describe physically equivalent vibrations, and the dispersion relation $\\omega(k)$ is periodic in $k$ with period $G = 2\\pi/a$."
+            ],
+            "guid": "M9~Xv?/yhO",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "dispersion",
+                "lattice",
+                "relation",
+                "symmetry"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Brillouin Zone and $k$ Range**  <br />What is the relation between the Brillouin zone and the region $k = -\\pi/a$ to $k = \\pi/a$ in a one-dimensional lattice?",
+                "The first Brillouin zone is defined as the set of unique $k$ values that give distinct physical solutions. For a 1D lattice with spacing $a$, the first Brillouin zone is:<br />$$<br />-\\frac{\\pi}{a} < k \\leq \\frac{\\pi}{a}<br />$$<br />This range covers all physically distinct wavevectors due to the periodicity of the reciprocal lattice ($G = 2\\pi/a$). All $k$ values outside this region are equivalent to a $k$ within the zone by $k \\to k + mG$, where $m$ is an integer."
+            ],
+            "guid": "d4LO`C2oZ#",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "brillouin",
+                "reciprocal",
+                "space",
+                "zone"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Group and Phase Velocity in Lattice Vibrations**  <br />Define and distinguish between group velocity and phase velocity for lattice vibrations.",
+                "The phase velocity $v_p$ is the speed at which individual wave crests move, given by:<br />$$<br />v_p = \\frac{\\omega}{k}<br />$$<br />The group velocity $v_g$ is the speed at which the envelope of a wave packet (and thus energy and information) propagates:<br />$$<br />v_g = \\frac{d\\omega}{dk}<br />$$<br />For the 1D chain dispersion relation $\\omega(k) = 2\\sqrt{\\frac{K}{M}} |\\sin(ka/2)|$, the group velocity varies with $k$, reflecting the dispersive nature of lattice vibrations."
+            ],
+            "guid": "d)GOjrXxLZ",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "group",
+                "phase",
+                "velocity"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Normal Modes and Allowed $k$-values**  <br />How are the allowed $k$-values determined for a finite chain with periodic boundary conditions?",
+                "For a chain of $N$ atoms with periodic boundary conditions ($u_{n+N} = u_n$), the allowed $k$ values satisfy:<br />$$<br />e^{ikNa} = 1 \\implies k = \\frac{2\\pi m}{Na}, \\quad m = 0, \\pm1, \\ldots, \\pm(N/2)<br />$$<br />These $k$ values ensure that the displacement pattern repeats after $N$ atoms, matching the boundary conditions. The set of $k$ fills the first Brillouin zone."
+            ],
+            "guid": "Q%*D0xsJ[E",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "boundary",
+                "conditions",
+                "modes",
+                "normal"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Phonons and Quantization**  <br />What is a phonon, and how does quantization arise in lattice vibrations?",
+                "A phonon is a quantized mode of lattice vibration, analogous to a photon for electromagnetic waves. In quantum theory, each normal mode of frequency $\\omega$ is treated as an independent quantum harmonic oscillator, with energy levels:<br />$$<br />E_n = \\hbar\\omega\\left(n + \\frac{1}{2}\\right), \\quad n = 0, 1, 2, \\ldots<br />$$<br />Phonons are the quanta of these vibrations, and $k$ and $\\omega$ label their momentum and energy."
+            ],
+            "guid": "v6t6Bp:6&W",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "phonons",
+                "quantization"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Summary: Why Restrict $k$ to the Brillouin Zone?**  <br />Summarize why only $k$-values within the first Brillouin zone correspond to physically distinct vibrations.",
+                "Because the lattice is periodic, displacement waves with $k$ and $k+G$ ($G = 2\\pi/a$) are physically indistinguishable. The first Brillouin zone ($-\\pi/a < k \\leq \\pi/a$) contains all unique $k$-values; any $k$ outside can be mapped inside by subtracting a reciprocal lattice vector. Thus, the physics is completely captured by $k$ in the first Brillouin zone."
+            ],
+            "guid": "Lcy{)TO+d3",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "periodicity",
+                "Summary"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Dulong-Petit Law**<br />State the Dulong-Petit law and its significance for the specific heat of solids.",
+                "The Dulong-Petit law states that the molar heat capacity at constant volume ($C_V$) for many solid elements at high temperatures is approximately <br />$$<br />C_V \\approx 3R<br />$$<br />where $R$ is the universal gas constant ($R \\approx 8.314\\,\\mathrm{J\\,mol^{-1}\\,K^{-1}}$). This law indicates that each atom in a solid contributes $3k_B$ to the heat capacity ($k_B$ is Boltzmann'\\''s constant), due to three degrees of freedom (one for each spatial dimension). The law works well for many metals at room temperature but fails at low temperatures and for lighter elements."
+            ],
+            "guid": "c$F]pz!P)L",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "dulong-petit",
+                "heat-capacity"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Einstein Model**<br />Briefly explain the Einstein model for the heat capacity of solids, and its main assumptions.",
+                "The Einstein model treats each atom in a solid as an independent 3D quantum harmonic oscillator with the same frequency $\\nu_E$. The model quantizes the vibrational energy levels, with:<br />$$<br />E_n = \\left(n + \\frac{1}{2}\\right)h\\nu_E<br />$$<br />where $n=0,1,2,\\ldots$ and $h$ is Planck'\\''s constant. The key assumption is all atoms oscillate independently with the same frequency, ignoring interactions between them. It was the first to explain the decrease in heat capacity at low temperatures, unlike the classical Dulong-Petit law."
+            ],
+            "guid": "yyopunp*2E",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "einstein-model",
+                "heat-capacity"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Einstein Model — Formulas**<br />Give the formula for the internal energy and heat capacity in the Einstein model.",
+                "The average energy per oscillator is:<br />$$<br />\\langle E \\rangle = \\frac{h\\nu_E}{\\exp\\left(\\frac{h\\nu_E}{k_BT}\\right) - 1}<br />$$<br />For $N$ atoms (each with 3 oscillators), the total internal energy:<br />$$<br />U = 3N \\langle E \\rangle<br />$$<br />The molar heat capacity at constant volume is:<br />$$<br />C_V = \\frac{dU}{dT} = 3R \\left(\\frac{\\theta_E}{T}\\right)^2 \\frac{\\exp(\\theta_E/T)}{[\\exp(\\theta_E/T) - 1]^2}<br />$$<br />where $\\theta_E = \\frac{h\\nu_E}{k_B}$ is the Einstein temperature."
+            ],
+            "guid": "Bf;z:^p9?V",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "einstein-model",
+                "formulas"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Bose-Einstein Distribution**<br />What is the Bose-Einstein distribution, and how does it relate to the Einstein model for solids?",
+                "The Bose-Einstein distribution describes the average number of bosons occupying an energy state $\\epsilon$ at temperature $T$:<br />$$<br />\\langle n \\rangle = \\frac{1}{\\exp\\left(\\frac{\\epsilon - \\mu}{k_BT}\\right) - 1}<br />$$<br />For phonons (quanta of lattice vibrations), the chemical potential $\\mu = 0$, so:<br />$$<br />\\langle n \\rangle = \\frac{1}{\\exp\\left(\\frac{\\epsilon}{k_BT}\\right) - 1}<br />$$<br />In the Einstein model, the vibrational energy levels are quantized, and the occupation of these levels follows the Bose-Einstein distribution."
+            ],
+            "guid": "v9jN6u~;a7",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "bose-einstein-distribution"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Einstein Temperature**<br />Define the Einstein temperature and explain how it affects the heat capacity of a solid.",
+                "The Einstein temperature $\\theta_E$ is defined as:<br />$$<br />\\theta_E = \\frac{h\\nu_E}{k_B}<br />$$<br />where $\\nu_E$ is the characteristic oscillator frequency. It sets the energy scale for quantum effects in lattice vibrations. When $T \\gg \\theta_E$, $C_V \\approx 3R$ (Dulong-Petit limit). When $T \\ll \\theta_E$, $C_V$ drops off exponentially:<br />$$<br />C_V \\propto \\exp(-\\theta_E/T)<br />$$<br />Thus, $\\theta_E$ determines the temperature range where quantum effects suppress the heat capacity."
+            ],
+            "guid": "q0BTCG&gj(",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "einstein-temperature",
+                "heat-capacity"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Debye Model**<br />What is the Debye model for the heat capacity of solids, and what are its key features?",
+                "The Debye model treats lattice vibrations as phonons in a box, allowing for a spectrum of frequencies up to a maximum (Debye frequency $\\nu_D$). It assumes the density of vibrational states varies as $\\nu^2$ and integrates over all possible modes. The model predicts that at low temperatures, the heat capacity varies as $T^3$:<br />$$<br />C_V \\propto T^3 \\quad (T \\ll \\theta_D)<br />$$<br />At high temperatures, it approaches the Dulong-Petit value:<br />$$<br />C_V \\to 3R \\quad (T \\gg \\theta_D)<br />$$<br />where $\\theta_D$ is the Debye temperature."
+            ],
+            "guid": "f/fBQ<.v}1",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "debye-model",
+                "heat-capacity"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Debye Model — Formula**<br />Write the expression for the heat capacity at constant volume in the Debye model.",
+                "The Debye heat capacity is:<br />$$<br />C_V = 9N k_B \\left(\\frac{T}{\\theta_D}\\right)^3 \\int_0^{\\theta_D/T} \\frac{x^4 e^x}{(e^x - 1)^2} dx<br />$$<br />where $N$ is the number of atoms, $k_B$ is Boltzmann'\\''s constant, and $\\theta_D$ is the Debye temperature."
+            ],
+            "guid": "dm_|%hy}aa",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "debye-model",
+                "formulas"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Model Comparison**<br />Compare the Dulong-Petit, Einstein, and Debye models for the heat capacity of solids.",
+                "- **Dulong-Petit**: Classical, predicts $C_V = 3R$ for all $T$, works at high $T$, fails at low $T$<br />- **Einstein**: Quantum, assumes all atoms oscillate with same frequency, captures drop in $C_V$ at low $T$, but predicts exponential decrease ($C_V \\propto e^{-\\theta_E/T}$), not matching observed $T^3$ law.<br />- **Debye**: Quantum, considers a spectrum of frequencies, correct low-$T$ behavior ($C_V \\propto T^3$), matches high-$T$ Dulong-Petit limit, agrees well with experiment across all $T$."
+            ],
+            "guid": "o56?|[c$E3",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "comparison",
+                "models"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Oscillators in Models**<br />Describe the nature of oscillators used in the Dulong-Petit, Einstein, and Debye models.",
+                "- **Dulong-Petit**: Treats atoms as classical 3D harmonic oscillators, continuous energy.<br />- **Einstein**: Atoms as independent quantum harmonic oscillators, all with same frequency $\\nu_E$.<br />- **Debye**: Collective vibrations (phonons) with a continuous spectrum of frequencies up to a maximum (Debye frequency). Vibrations propagate as waves through the lattice."
+            ],
+            "guid": "O6%>ns9Xm>",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "oscillators",
+                "solids"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Density of States**<br />What is the density of states for phonons, what problem does it solve, and what is its physical interpretation?",
+                "The density of states $g(\\nu)$ gives the number of vibrational modes per unit frequency interval at frequency $\\nu$. In 3D, for acoustic phonons:<br />$$<br />g(\\nu) \\propto \\nu^2<br />$$<br />It solves the problem of accounting for the distribution of vibrational modes in the solid. Physically, it tells us how many ways the lattice can vibrate at a given frequency, crucial for accurately calculating thermal properties like heat capacity."
+            ],
+            "guid": "EwsIcjdHi?",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "density-of-states",
+                "phonons"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**State in Density of States**<br />In the context of density of states, what is meant by a \"state\"?",
+                "A \"state\" refers to a specific quantum mechanical vibrational mode (phonon mode) of the solid, characterized by its wave vector and polarization. Each state has a definite energy and can be occupied according to Bose-Einstein statistics. The density of states counts how many such states exist at each energy or frequency."
+            ],
+            "guid": "Ft1$>Jhr1*",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "density-of-states",
+                "state"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Debye Frequency & Debye Temperature**<br />Define the Debye frequency and Debye temperature, and explain their physical significance.",
+                "- **Debye frequency ($\\nu_D$):** The highest allowed vibrational frequency in the Debye model; set by requiring the total number of modes equals $3N$ (for $N$ atoms).<br />- **Debye temperature ($\\theta_D$):**<br />$$<br />\\theta_D = \\frac{h\\nu_D}{k_B}<br />$$<br />It sets the temperature scale below which quantum effects reduce the heat capacity. For $T \\ll \\theta_D$, $C_V \\propto T^3$; for $T \\gg \\theta_D$, $C_V \\approx 3R$. $\\theta_D$ is a characteristic of the solid'\\''s stiffness and atomic mass."
+            ],
+            "guid": "qJ=Dbd>3.E",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "debye-frequency",
+                "debye-temperature"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Debye Theory**<br />How can you determine the heat capacity of a solid as a function of temperature using the Debye model?",
+                "The Debye model treats the vibrations of atoms in a solid as phonons in a box with a maximum frequency called the Debye frequency ($\\omega_D$). The heat capacity is calculated by integrating over all possible vibrational modes up to this frequency.<br />The Debye heat capacity $C_V$ is given by:<br />$$<br />C_V = 9 N k_B \\left( \\frac{T}{\\theta_D} \\right)^3 \\int_0^{\\theta_D/T} \\frac{x^4 e^x}{(e^x - 1)^2} dx<br />$$<br />where $N$ is the number of atoms, $k_B$ is Boltzmann'\\''s constant, $T$ is temperature, and $\\theta_D$ is the Debye temperature defined as $\\theta_D = \\hbar \\omega_D / k_B$.<br />At low temperatures ($T \\ll \\theta_D$), $C_V \\propto T^3$. At high temperatures ($T \\gg \\theta_D$), $C_V$ approaches the Dulong-Petit law: $C_V \\approx 3 N k_B$."
+            ],
+            "guid": "Q}p.K^3^^z",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "debye",
+                "heat-capacity",
+                "solid"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Debye Theory**<br />How does the Debye model for heat capacity differ at low and high temperatures, and why?",
+                "At low temperatures ($T \\ll \\theta_D$), the Debye model predicts that the heat capacity $C_V$ varies as $T^3$:<br />$$<br />C_V \\propto T^3<br />$$<br />This happens because only low-frequency (long wavelength) phonons are excited.<br />At high temperatures ($T \\gg \\theta_D$), the Debye model approaches the classical Dulong-Petit value:<br />$$<br />C_V \\to 3 N k_B<br />$$<br />Here, all vibrational modes are excited, consistent with the equipartition theorem.<br />The transition between these regimes is controlled by the Debye temperature $\\theta_D$."
+            ],
+            "guid": "I2z`yUHd@)",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "debye",
+                "limits",
+                "temperature"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Thermal Conductivity**<br />How is the total thermal conductivity of a solid written as a sum of contributions, and what are the physical origins?",
+                "The total thermal conductivity $\\kappa$ of a solid is the sum of two main contributions:<br />$$<br />\\kappa = \\kappa_{\\text{lattice}} + \\kappa_{\\text{electronic}}<br />$$<br />- $\\kappa_{\\text{lattice}}$: due to lattice vibrations (phonons)<br />- $\\kappa_{\\text{electronic}}$: due to free (conduction) electrons<br />In metals, $\\kappa_{\\text{electronic}}$ is often dominant, while in insulators, $\\kappa_{\\text{lattice}}$ is the main contributor."
+            ],
+            "guid": "HO3,E~>5rs",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "electrons",
+                "lattice",
+                "thermal-conductivity"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Thermal Conductivity**<br />What is the definition of thermal conductivity in solids?",
+                "Thermal conductivity ($\\kappa$) is a measure of a material'\\''s ability to conduct heat. It is defined by Fourier'\\''s law:<br />$$<br />\\vec{q} = -\\kappa \\nabla T<br />$$<br />where $\\vec{q}$ is the heat flux (energy per unit area per unit time), and $\\nabla T$ is the temperature gradient.<br />A higher $\\kappa$ means the material transports heat more efficiently."
+            ],
+            "guid": "A5oK,pcH2&",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "definition",
+                "thermal-conductivity"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Phonons and Thermal Conductivity**<br />Explain the connection between phonons and thermal conductivity in non-metals.",
+                "In non-metals (insulators), heat is mainly carried by lattice vibrations, quantized as phonons. The phonon contribution to thermal conductivity is given by:<br />$$<br />\\kappa_{\\text{lattice}} = \\frac{1}{3} C_v v_s l<br />$$<br />where $C_v$ is the specific heat per unit volume, $v_s$ is the speed of sound (phonon velocity), and $l$ is the phonon mean free path.<br />Phonon-phonon scattering, boundaries, and impurities limit $l$, thus affecting $\\kappa_{\\text{lattice}}$."
+            ],
+            "guid": "jUtWX(x.X2",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "phonons",
+                "thermal-conductivity"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Thermal Expansion**<br />What is the coefficient of thermal expansion, and how is it defined mathematically?",
+                "The coefficient of linear thermal expansion ($\\alpha$) quantifies the fractional change in length per degree change in temperature:<br />$$<br />\\alpha = \\frac{1}{L} \\frac{dL}{dT}<br />$$<br />where $L$ is the original length, and $dL/dT$ is the rate of change of length with temperature.<br />For volume expansion, the volumetric coefficient is:<br />$$<br />\\beta = \\frac{1}{V} \\frac{dV}{dT}<br />$$"
+            ],
+            "guid": "iPD@}EM*YT",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "coefficient",
+                "thermal-expansion"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Lattice Vibrations**<br />What are anharmonic terms in the context of lattice vibrations, and what are their physical consequences?",
+                "Anharmonic terms are higher-order terms in the potential energy expansion of atomic displacements, beyond the quadratic (harmonic) approximation.<br />For small displacements $u$:<br />$$<br />U = \\frac{1}{2} k u^2 \\; \\text{(harmonic)} + \\frac{1}{3} \\alpha u^3 + \\frac{1}{4} \\beta u^4 + \\ldots<br />$$<br />Anharmonicity leads to phenomena such as thermal expansion, finite thermal conductivity (phonon-phonon scattering), and temperature dependence of vibrational frequencies."
+            ],
+            "guid": "AW3V)}ZBi,",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "anharmonic",
+                "terms"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Thermal Expansion**<br />Explain the physical origin of thermal expansion in solids.",
+                "Thermal expansion arises because the interatomic potential is generally asymmetric (anharmonic). As temperature increases, atoms vibrate with larger amplitudes, and, due to the anharmonicity, the average interatomic distance increases, leading to macroscopic expansion.<br />No expansion would occur in a perfectly harmonic (symmetric) potential."
+            ],
+            "guid": "p5rLK`&@E-",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "thermal-expansion"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Phonon Scattering**<br />What are the main phonon collision (scattering) processes in solids, and how do they affect thermal conductivity?",
+                "Phonon scattering processes include:<br />- **Normal processes (N-processes):** Conserve total phonon momentum. Do not directly impede heat flow.<br />- **Umklapp processes (U-processes):** Do not conserve phonon momentum modulo a reciprocal lattice vector; effectively reverse the direction of heat flow and limit thermal conductivity.<br />- **Boundary scattering:** Phonons scatter off sample boundaries.<br />- **Impurity scattering:** Phonons scatter off defects or impurities.<br />Umklapp and impurity scattering reduce the phonon mean free path, thus lowering thermal conductivity."
+            ],
+            "guid": "p:S.rGp$k1",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "collisions",
+                "phonons"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "**Lattice Stability**<br />What is the Lindemann criterion, and how does it relate to the melting of solids?",
+                "The Lindemann criterion provides an empirical rule for the melting of solids. It states that a solid will melt when the root-mean-square amplitude of atomic vibrations exceeds a certain fraction ($\\sim$0.1) of the interatomic distance.<br />Mathematically:<br />$$<br />\\frac{\\langle u^2 \\rangle^{1/2}}{a} \\gtrsim c<br />$$<br />where $\\langle u^2 \\rangle^{1/2}$ is the root-mean-square displacement, $a$ is the lattice constant, and $c$ is the Lindemann parameter (typically $\\sim$0.1).<br />When this ratio is exceeded, the crystal lattice becomes unstable, and melting occurs."
+            ],
+            "guid": "yWE5`Y:>uF",
+            "note_model_uuid": "57e13484-2146-11f0-949b-90e8680fb0a5",
+            "tags": [
+                "criterion",
+                "lindemann",
+                "melting"
             ]
         }
     ],
